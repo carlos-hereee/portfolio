@@ -11,16 +11,16 @@ export default function Navigation() {
             </div>
             <div className='footer-links'>
                 <Link to='/home' >
-                    <p>Home</p>
+                    <a>Home</a>
                 </Link>
                 <Link to='/projects'>
-                    <p>projects</p>
+                    <a>Projects</a>
                 </Link>
                 <Link to='/about-me'>
-                    <p>About Me</p>
+                    <a>About Me</a>
                 </Link>
                 <Link to='/contact-me'>
-                    <p>Contact</p>
+                    <a>Contact</a>
                 </Link>
             </div>
         </div>

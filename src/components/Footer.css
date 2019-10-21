@@ -2,13 +2,17 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    background: hsl(196, 75%, 22%);
+    color: white
 }
 .footer-links{
-    border: 2px solid green;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    color: white;
 }
-.footer-summary{
-    border: 4px solid red;
+.footer-links a{
+    color: white; 
+    text-decoration: none;
+    padding-top: 14px
 }
