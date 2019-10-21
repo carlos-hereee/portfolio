@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-export default function Work() {
+export default function Projects() {
     return(
         <div>
-            <h1>Work</h1>
+            <h1>Projects</h1>
             <p>
-                this is the Work page
+                this is the Projects page
             </p>
         </div>
     )

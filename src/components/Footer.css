@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.footer-links{
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footer-summary{
+    border: 4px solid red;
+}

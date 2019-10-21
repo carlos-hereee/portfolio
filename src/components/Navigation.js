@@ -9,8 +9,8 @@ export default function Navigation() {
             <Link to='/home' >
                 <p>Home</p>
             </Link>
-            <Link to='/work'>
-                <p>Work</p>
+            <Link to='/projects'>
+                <p>Projects</p>
             </Link>
             <Link to='/about-me'>
                 <p>About Me</p>
