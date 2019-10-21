@@ -10,12 +10,16 @@ export default function Navigation() {
                 <p> Feel free to check me out in my LinkIn, github</p>
             </div>
             <div className='footer-links'>
-                <Link to='/projects'>
-                    <a>Projects</a>
-                </Link>
                 <Link to='/about-me'>
                     <a>About Me</a>
                 </Link>
+                <Link to='/skills'>
+                    <a>Skills</a>
+                </Link>
+                <Link to='/projects'>
+                    <a>Projects</a>
+                </Link>
+                
                 <Link to='/contact-me'>
                     <a>Contact</a>
                 </Link>

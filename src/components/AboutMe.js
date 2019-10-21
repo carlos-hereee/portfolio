@@ -7,7 +7,7 @@ export default function AboutMe() {
     return(
         <div>
             <div className='about-me-header' >
-                <h3>About Me </h3>
+                <h1>About Me </h1>
             </div>
             <div className='about-me-content'>
                 <img src={Pic} alt='temp-headshot'/>
@@ -17,10 +17,6 @@ export default function AboutMe() {
                     </h3>
                     <p>
                         Always been passionate about coding, ever since I was in the 5th grade and I saw a computer for the first time. 
-                    </p>
-                    <p>
-                        After a couple of years from graduating High School, I was introduced to Lambda School. They taught me how to build Websites using: 
-                        HTML, CSS, JavaSprict, Redux, and React.
                     </p>
                 </div>
             </div>

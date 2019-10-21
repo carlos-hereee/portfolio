@@ -9,6 +9,11 @@ export default function Navigation() {
             <Link to='/about-me'>
                 <a>About Me</a>
             </Link>
+            <Link to='skills'>
+                <a>
+                    Skills
+                </a>
+            </Link>
             <Link to='/projects'>
                 <a>Projects</a>
             </Link>
