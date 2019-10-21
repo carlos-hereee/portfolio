@@ -6,14 +6,11 @@ import './navigation.css'
 export default function Navigation() {
     return(
         <div className='navigation'>
-            <Link to='/home' >
-                <a>Home</a>
+            <Link to='/about-me'>
+                <a>About Me</a>
             </Link>
             <Link to='/projects'>
                 <a>Projects</a>
-            </Link>
-            <Link to='/about-me'>
-                <a>About Me</a>
             </Link>
             <Link to='/contact-me'>
                 <a>Contact</a>

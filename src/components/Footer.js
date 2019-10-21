@@ -10,9 +10,6 @@ export default function Navigation() {
                 <p> Feel free to check me out in my LinkIn, github</p>
             </div>
             <div className='footer-links'>
-                <Link to='/home' >
-                    <a>Home</a>
-                </Link>
                 <Link to='/projects'>
                     <a>Projects</a>
                 </Link>
