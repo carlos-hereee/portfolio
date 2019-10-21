@@ -1,1 +1,6 @@
 
+.App{
+    border: 3px dashed green;
+    max-width: 1000px;
+    margin: auto;
+}
