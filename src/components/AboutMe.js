@@ -18,6 +18,16 @@ export default function AboutMe() {
                     <p>
                         Always been passionate about coding, ever since I was in the 5th grade and I saw a computer for the first time. 
                     </p>
+                    About Me 
+Profile picture
+Professional
+Solo headshot 
+No hats, sunglasses, or distracting clothes/background
+Full name
+No nicknames or gamer tags
+Personal Mission Statement
+Mission Statement must be approved by Career Coach (you can use the summary you wrote in your Linkedin summary, for example)
+
                 </div>
             </div>
         </div>

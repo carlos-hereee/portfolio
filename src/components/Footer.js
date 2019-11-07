@@ -8,6 +8,9 @@ export default function Navigation() {
         <div className='footer'>
             <div className='footer-summary'>
                 <p> Feel free to check me out in my LinkIn, github</p>
+                githubicon 
+                linkedin icon and 
+                maybe something else here
             </div>
             <div className='footer-links'>
                 <Link to='/about-me'>
