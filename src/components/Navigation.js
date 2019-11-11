@@ -7,18 +7,16 @@ export default function Navigation() {
     return(
         <div className='navigation'>
             <Link to='/about-me'>
-                <a>About Me</a>
+                About Me    
             </Link>
             <Link to='skills'>
-                <a>
-                    Skills
-                </a>
+                Skills
             </Link>
             <Link to='/projects'>
-                <a>Projects</a>
+                Projects    
             </Link>
             <Link to='/contact-me'>
-                <a>Contact</a>
+                Contact 
             </Link>
         </div>
     );

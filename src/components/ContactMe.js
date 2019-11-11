@@ -1,5 +1,6 @@
 import React from 'react';
-import { Formik } from 'formik'
+import { Formik } from 'formik';
+// import * as yup from 'yup';
 
 export default function ContactMe() {
     return(
@@ -19,7 +20,6 @@ export default function ContactMe() {
                Have a question or want to work together?
             </p>
             <Formik 
-                initialValues={{}}
             >
 
             </Formik>
