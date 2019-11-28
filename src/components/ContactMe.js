@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Formik, Field } from 'formik';
 // import * as yup from 'yup';
 
 export default function ContactMe() {
@@ -19,10 +19,13 @@ export default function ContactMe() {
             <p>
                Have a question or want to work together?
             </p>
-            <Formik 
+            {/* <Formik 
             >
+                <Field type='name' name='name' />
+                <Field type='email' name='email' />
+                <Field type='text' name='message' />
 
-            </Formik>
+            </Formik> */}
             {/* <Form>
 
             </Form> */}
