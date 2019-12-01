@@ -20,9 +20,6 @@ export default function Projects({ match }) {
 				<Link to={`${match.url}/back-end-projects`}>
 					<div className="button">Back-end Projects</div>
 				</Link>
-				<Link to={`${match.url}/full-stack-projects`}>
-					<div className="button">Full Stack Projects</div>
-				</Link>
 			</div>
 			<div className="project-body">
 				<Route
@@ -32,10 +29,6 @@ export default function Projects({ match }) {
 				<Route
 					path={`${match.url}/back-end-projects`}
 					component={BackEndProject}
-				/>
-				<Route
-					path={`${match.url}/fullstack-projects`}
-					component={FullStackProject}
 				/>
 			</div>
 		</div>
@@ -51,6 +44,60 @@ function FrontEndProject() {
 					justifyContent: "center",
 				}}
 			>
+				<Card>
+					<Card.Content>
+						<Card.Header>School Calendar</Card.Header>
+						<Card.Meta>React and Redux</Card.Meta>
+						<Card.Description>
+							Help School teacher and couches coodinate school
+							events
+						</Card.Description>
+					</Card.Content>
+					<Card.Content extra>
+						<div className="ui two buttons">
+							<Button
+								inverted
+								color="green"
+								href="https://github.com/Lambda-School-Labs/school-calendar-fe"
+							>
+								GitHub
+							</Button>
+							<Button inverted color="blue">
+								Deployed Site
+							</Button>
+						</div>
+					</Card.Content>
+				</Card>
+				<Card>
+					<Card.Content>
+						<Card.Header>Dad Jokes</Card.Header>
+						<Card.Meta>React and Redux</Card.Meta>
+						<Card.Description>
+							You're a funny guy, but you keep losing your list of
+							jokes and forgetting which ones had the best
+							reactions! Well worry no more- Dad (or bad??) jokes
+							app to the rescue.
+						</Card.Description>
+					</Card.Content>
+					<Card.Content extra>
+						<div className="ui two buttons">
+							<Button
+								inverted
+								color="green"
+								href="https://github.com/mesofunny/front-end"
+							>
+								GitHub
+							</Button>
+							<Button
+								inverted
+								color="blue"
+								href="https://mesofunny2019.netlify.com/"
+							>
+								Deployed Site
+							</Button>
+						</div>
+					</Card.Content>
+				</Card>
 				<Card>
 					<Card.Content>
 						<Card.Header>Life GPA</Card.Header>
@@ -82,37 +129,7 @@ function FrontEndProject() {
 								color="blue"
 								href="https://lifegpaproject.netlify.com"
 							>
-								Deployed Cite
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Dad Jokes</Card.Header>
-						<Card.Meta>React and Redux</Card.Meta>
-						<Card.Description>
-							You're a funny guy, but you keep losing your list of
-							jokes and forgetting which ones had the best
-							reactions! Well worry no more- Dad (or bad??) jokes
-							app to the rescue.
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
-								href="https://github.com/mesofunny/front-end"
-							>
-								GitHub
-							</Button>
-							<Button
-								inverted
-								color="blue"
-								href="https://mesofunny2019.netlify.com/"
-							>
-								Deployed Cite
+								Deployed Site
 							</Button>
 						</div>
 					</Card.Content>
@@ -133,134 +150,50 @@ function BackEndProject() {
 			>
 				<Card>
 					<Card.Content>
-						<Card.Header>Steve Sanders</Card.Header>
-						<Card.Meta>Friends of Elliot</Card.Meta>
+						<Card.Header>Air BNB</Card.Header>
+						<Card.Meta>Node.js, MySQL</Card.Meta>
 						<Card.Description>
-							Steve wants to add you to the group{" "}
-							<strong>best friends</strong>
+							An app that uses past AirBnB datasets to determine
+							the optimal pricing of an AirBnB unit based upon
+							features such as geographic location, size,
+							bedrooms, etc.
 						</Card.Description>
 					</Card.Content>
 					<Card.Content extra>
 						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
+							<Button
+								inverted
+								color="green"
+								href="https://github.com/AirBNBOptimalPrice/bnb-web-backend"
+							>
+								GitHub
 							</Button>
 							<Button inverted color="blue">
-								Decline
+								Deployed Site
 							</Button>
 						</div>
 					</Card.Content>
 				</Card>
 				<Card>
 					<Card.Content>
-						<Card.Header>Molly Thomas</Card.Header>
-						<Card.Meta>New User</Card.Meta>
+						<Card.Header>School Calendar</Card.Header>
+						<Card.Meta>Node.js, MySQL</Card.Meta>
 						<Card.Description>
-							Molly wants to add you to the group{" "}
-							<strong>musicians</strong>
+							Help School teacher and couches coodinate school
+							events
 						</Card.Description>
 					</Card.Content>
 					<Card.Content extra>
 						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
+							<Button
+								inverted
+								color="green"
+								href="https://github.com/Lambda-School-Labs/school-calendar-be"
+							>
+								GitHub
 							</Button>
 							<Button inverted color="blue">
-								Decline
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Jenny Lawrence</Card.Header>
-						<Card.Meta>New User</Card.Meta>
-						<Card.Description>
-							Jenny requested permission to view your contact
-							details
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
-							</Button>
-							<Button inverted color="blue">
-								Decline
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-			</Card.Group>
-		</div>
-	);
-}
-function FullStackProject() {
-	return (
-		<div>
-			<Card.Group
-				style={{
-					margin: "30px 40px",
-					display: "flex",
-					justifyContent: "center",
-				}}
-			>
-				<Card>
-					<Card.Content>
-						<Card.Header>Steve Sanders</Card.Header>
-						<Card.Meta>Friends of Elliot</Card.Meta>
-						<Card.Description>
-							Steve wants to add you to the group{" "}
-							<strong>best friends</strong>
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
-							</Button>
-							<Button inverted color="blue">
-								Decline
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Molly Thomas</Card.Header>
-						<Card.Meta>New User</Card.Meta>
-						<Card.Description>
-							Molly wants to add you to the group{" "}
-							<strong>musicians</strong>
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
-							</Button>
-							<Button inverted color="blue">
-								Decline
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Jenny Lawrence</Card.Header>
-						<Card.Meta>New User</Card.Meta>
-						<Card.Description>
-							Jenny requested permission to view your contact
-							details
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button inverted color="green">
-								Approve
-							</Button>
-							<Button inverted color="blue">
-								Decline
+								Deployed Site
 							</Button>
 						</div>
 					</Card.Content>
