@@ -10,8 +10,8 @@ function ContactMe() {
 			<div className="header">
 				<h1 className="title">Contact</h1>
 				<p>
-					Email me at hello@chernandez.dev or fill out the form below.
-					Thanks!
+					Email me at 97hernandez.c@gmail.com or fill out the form
+					below. Thanks!
 				</p>
 			</div>
 			<div className="form">
