@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./navigation.css";
+import "../pages/projectScss.scss";
 
 export default function Navigation() {
 	return (
 		<div className="navigation">
 			<Link to="/">Home</Link>
+			<Link to="/skills">Skills</Link>
 			<Link to="/projects/front-end-projects">Projects</Link>
 			<Link to="/contact-me">Contact</Link>
 		</div>

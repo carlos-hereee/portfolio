@@ -1,18 +1,23 @@
 import React from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
 
+//adding components
 import Navigation from "./components/Navigation";
-import AboutMe from "./pages/AboutMe";
+import Home from "./pages/Home";
 import ContactMe from "./pages/ContactMe";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
+import About from "./pages/About";
+
+//css
+import "./App.scss";
 
 function App() {
 	return (
 		<div className="App">
 			<Navigation />
-			<Route exact path="/" component={AboutMe} />
+			<Route exact path="/" component={Home} />
+			<Route path="/about-me" component={About} />
 			<Route path="/projects" component={Projects} />
 			<Route path="/contact-me" component={ContactMe} />
 			<Footer />
