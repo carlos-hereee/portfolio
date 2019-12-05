@@ -7,7 +7,7 @@ export default function Navigation() {
 	return (
 		<div className="navigation">
 			<Link to="/">Home</Link>
-			<Link to="/skills">Skills</Link>
+			<Link to="/about">About</Link>
 			<Link to="/projects/front-end-projects">Projects</Link>
 			<Link to="/contact-me">Contact</Link>
 		</div>

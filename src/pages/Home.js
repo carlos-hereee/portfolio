@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./projectScss.scss";
+
 export default function Home() {
 	return (
-		<div className="Header">
+		<div className="home">
 			<div className="bio">
 				<h2>Hello, I'm Carlos Hernandez.</h2>
 				<p>I'm a full-stack web developer from Houston, Texas</p>
