@@ -15,6 +15,7 @@ export default function AboutMe() {
 						margin: "1%",
 					}}
 					src={Pic}
+					alt="img"
 				/>
 				<h4>My history/What brought me here?</h4>
 				<h4>My current time in Lambda School/ Why I enjoy coding?</h4>

@@ -1,200 +1,158 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
 
-import { Button, Card } from "semantic-ui-react";
-import "./projects.scss";
+import { Icon } from "semantic-ui-react";
 
-export default function Projects({ match }) {
+import mesofunny from "../assets/mesofunny.PNG";
+import bnb from "../assets/bnb.PNG";
+import school from "../assets/school.PNG";
+import "./projectScss.scss";
+
+export default function Projects() {
 	return (
 		<div className="project-container">
 			<h1 className="title">Projects</h1>
 			<div className="project-header">
-				<Link to={`${match.url}/front-end-projects`}>
-					<div className="button">Front End Projects</div>
-				</Link>
-				<Link to={`${match.url}/back-end-projects`}>
-					<div className="button">Back-end Projects</div>
-				</Link>
-			</div>
-			<div className="project-body">
-				<Route
-					exact
-					path={`${match.url}/front-end-projects`}
-					component={FrontEndProject}
-				/>
-				<Route
-					path={`${match.url}/back-end-projects`}
-					component={BackEndProject}
-				/>
+				<FrontEndProject />
+				<BackEndProject />
 			</div>
 		</div>
 	);
 }
 function FrontEndProject() {
 	return (
-		<div>
-			<Card.Group
-				style={{
-					margin: "20px 40px",
-					display: "flex",
-					justifyContent: "center",
-				}}
-			>
-				<Card>
-					<Card.Content>
-						<Card.Header>School Calendar</Card.Header>
-						<Card.Meta>React and Redux</Card.Meta>
-						<Card.Description>
-							Help School teacher and couches coodinate school
-							events
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
-								href="https://github.com/Lambda-School-Labs/school-calendar-fe"
-							>
-								GitHub
-							</Button>
-							<Button inverted color="blue">
-								Deployed Site
-							</Button>
-						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Dad Jokes</Card.Header>
-						<Card.Meta>React and Redux</Card.Meta>
-						<Card.Description>
+		<div className="frontEnd">
+			<h2>Frontend</h2>
+			<div className="cards">
+				<div className="card">
+					<div className="img">
+						<img
+							src={mesofunny}
+							alt="mesofunny"
+							style={{ width: "150px" }}
+						/>
+					</div>
+					<div className="body">
+						<h3>Dad Jokes</h3>
+						<h5>React, Redux</h5>
+						<p>
 							You're a funny guy, but you keep losing your list of
 							jokes and forgetting which ones had the best
 							reactions! Well worry no more- Dad (or bad??) jokes
 							app to the rescue.
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
+						</p>
+						<div className="project-btn">
+							<a href="https://mesofunny2019.netlify.com/">
+								View Site
+							</a>
+							<a
 								href="https://github.com/mesofunny/front-end"
+								style={{ color: "black" }}
 							>
-								GitHub
-							</Button>
-							<Button
-								inverted
-								color="blue"
-								href="https://mesofunny2019.netlify.com/"
-							>
-								Deployed Site
-							</Button>
+								<Icon name="github" size="large" />
+							</a>
 						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>Life GPA</Card.Header>
-						<Card.Meta>React and Redux</Card.Meta>
-						<Card.Description>
-							Users create an account, log in, and tell the app a
-							list of habits they want to track. There are both
-							prompts to add habits to your list, and spots to
-							write your own. The app evaluates the daily habits
-							and rather than calculating streaks on a calendar,
-							it calculates a percentage of times a certain habit
-							has been done int he past 30, 60, or 90 days. Then,
-							it averages out all the habits' averages into one
-							overall average. All you do is tell the app which
-							habits you performed each day.
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
-								href="https://github.com/bw-lifegpa/Frontend"
-							>
-								GitHub
-							</Button>
-							<Button
-								inverted
-								color="blue"
-								href="https://lifegpaproject.netlify.com"
-							>
-								Deployed Site
-							</Button>
+					</div>
+				</div>
+				<div className="cards">
+					<div className="card">
+						<div className="img">
+							<img
+								src={school}
+								alt="mesofunny"
+								style={{ width: "150px", height: "150px" }}
+							/>
 						</div>
-					</Card.Content>
-				</Card>
-			</Card.Group>
+						<div className="body">
+							<h3>School Calendar</h3>
+							<h5>React</h5>
+							<p>
+								Help School teacher and coaches coordinate with
+								their students
+							</p>
+							<div className="project-btn">
+								<a href="https://nervous-leakey-68fd24.netlify.com/">
+									View Site
+								</a>
+								<a
+									href="https://github.com/Lambda-School-Labs/school-calendar-fe"
+									style={{ color: "black" }}
+								>
+									<Icon name="github" size="large" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
 function BackEndProject() {
 	return (
-		<div style={{ paddingBottom: "340px" }}>
-			<Card.Group
-				style={{
-					margin: "30px 40px",
-					display: "flex",
-					justifyContent: "center",
-				}}
-			>
-				<Card>
-					<Card.Content>
-						<Card.Header>Air BNB</Card.Header>
-						<Card.Meta>Node.js, MySQL</Card.Meta>
-						<Card.Description>
+		<div className="backend">
+			<h2>Backend</h2>
+			<div className="cards">
+				<div className="card">
+					<div className="img">
+						<img
+							src={bnb}
+							alt="mesofunny"
+							style={{ width: "150px" }}
+						/>
+					</div>
+					<div className="body">
+						<h3>Air BNB</h3>
+						<h5>Node.js, MySQL</h5>
+						<p>
 							An app that uses past AirBnB datasets to determine
 							the optimal pricing of an AirBnB unit based upon
 							features such as geographic location, size,
 							bedrooms, etc.
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
+						</p>
+						<div className="project-btn">
+							<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
+								View Site
+							</a>
+							<a
 								href="https://github.com/AirBNBOptimalPrice/bnb-web-backend"
+								style={{ color: "black" }}
 							>
-								GitHub
-							</Button>
-							<Button inverted color="blue">
-								Deployed Site
-							</Button>
+								<Icon name="github" size="large" />
+							</a>
 						</div>
-					</Card.Content>
-				</Card>
-				<Card>
-					<Card.Content>
-						<Card.Header>School Calendar</Card.Header>
-						<Card.Meta>Node.js, MySQL</Card.Meta>
-						<Card.Description>
-							Help School teacher and couches coodinate school
-							events
-						</Card.Description>
-					</Card.Content>
-					<Card.Content extra>
-						<div className="ui two buttons">
-							<Button
-								inverted
-								color="green"
-								href="https://github.com/Lambda-School-Labs/school-calendar-be"
-							>
-								GitHub
-							</Button>
-							<Button inverted color="blue">
-								Deployed Site
-							</Button>
+					</div>
+				</div>
+				<div className="cards">
+					<div className="card">
+						<div className="img">
+							<img
+								src={school}
+								alt="mesofunny"
+								style={{ width: "150px", height: "150px" }}
+							/>
 						</div>
-					</Card.Content>
-				</Card>
-			</Card.Group>
+						<div className="body">
+							<h3>School Calendar</h3>
+							<h5>React</h5>
+							<p>
+								Help School teacher and coaches coordinate with
+								their students
+							</p>
+							<div className="project-btn">
+								<a href="https://nervous-leakey-68fd24.netlify.com/">
+									View Site
+								</a>
+								<a
+									href="https://github.com/Lambda-School-Labs/school-calendar-be"
+									style={{ color: "black" }}
+								>
+									<Icon name="github" size="large" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
