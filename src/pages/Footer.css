@@ -1,18 +1,8 @@
-.footer{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background: hsl(196, 75%, 22%);
-    color: white
-}
-.footer-links{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    color: white;
-}
-.footer-links a{
-    color: white; 
-    text-decoration: none;
-    padding-top: 14px
+.footer {
+	background: hsl(196, 75%, 22%);
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 1000px;
 }

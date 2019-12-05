@@ -4,11 +4,6 @@ import { Link, Route } from "react-router-dom";
 import { Button, Card } from "semantic-ui-react";
 import "./projects.scss";
 
-/* Projects
-	Links to at least 2 projects, with code easily accessible + deployed link
-	Best to use projects from Build Weeks, capstone project, and personal side projects
-	NO sprint challenges or projects with Lambda in the title  
-*/
 export default function Projects({ match }) {
 	return (
 		<div className="project-container">
@@ -23,6 +18,7 @@ export default function Projects({ match }) {
 			</div>
 			<div className="project-body">
 				<Route
+					exact
 					path={`${match.url}/front-end-projects`}
 					component={FrontEndProject}
 				/>
@@ -140,7 +136,7 @@ function FrontEndProject() {
 }
 function BackEndProject() {
 	return (
-		<div>
+		<div style={{ paddingBottom: "340px" }}>
 			<Card.Group
 				style={{
 					margin: "30px 40px",

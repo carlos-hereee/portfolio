@@ -1,41 +1,34 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
 
 import { Card } from "semantic-ui-react";
 import "./skills.scss";
 
-export default function Skills({ match }) {
+export default function Skills() {
 	return (
 		<div className="skills-container">
+			<h1 className="title">Skills</h1>
 			<div className="skills-header">
-				<Link to={`${match.url}/front-end`}>
-					<div className="button">
-						Front End Languages and Frameworks
-					</div>
-				</Link>
-				<Link to={`${match.url}/back-end`}>
-					<div className="button">
-						Back-end Languages and Frameworks
-					</div>
-				</Link>
+				<div className="button">Front End Languages and Frameworks</div>
+				<div className="button">Back-end Languages and Frameworks</div>
 			</div>
-			<div className="skills-body">
-				<Route path={`${match.url}/front-end`} component={FrontEnd} />
-				<Route path={`${match.url}/back-end`} component={BackEnd} />
+			<div
+				className="skills-body"
+				style={{
+					display: "flex",
+					justifyContent: "space-around",
+					marginTop: "20px",
+				}}
+			>
+				<FrontEnd />
+				<BackEnd />
 			</div>
 		</div>
 	);
 }
 function FrontEnd() {
 	return (
-		<>
-			<Card.Group
-				style={{
-					marginTop: "10px",
-					width: "220px",
-					marginLeft: "40px",
-				}}
-			>
+		<div className="frontend" style={{ width: "40%" }}>
+			<Card.Group>
 				<Card fluid color="yellow" header="HTML" />
 				<Card fluid color="yellow" header="CSS & SCSS" />
 				<Card fluid color="yellow" header="JavaScript" />
@@ -46,24 +39,32 @@ function FrontEnd() {
 					style={{ marginBottom: "40px" }}
 				/>
 			</Card.Group>
-		</>
+		</div>
 	);
 }
 function BackEnd() {
 	return (
-		<>
-			<Card.Group
-				style={{
-					marginTop: "10px",
-					width: "220px",
-					marginLeft: "500px",
-					textAlign: "right",
-				}}
-			>
-				<Card fluid color="yellow" header="Node" />
-				<Card fluid color="yellow" header="Firebase" />
-				<Card fluid color="yellow" header="MySQL" />
+		<div className="backend" style={{ marginTop: "none", width: "40%" }}>
+			<Card.Group style={{ textAlign: "right" }}>
+				<Card
+					style={{ height: "47.16px" }}
+					fluid
+					color="yellow"
+					header="Node"
+				/>
+				<Card
+					style={{ height: "47.16px" }}
+					fluid
+					color="yellow"
+					header="Firebase"
+				/>
+				<Card
+					style={{ height: "47.16px" }}
+					fluid
+					color="yellow"
+					header="MySQL"
+				/>
 			</Card.Group>
-		</>
+		</div>
 	);
 }
