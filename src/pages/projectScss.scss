@@ -44,22 +44,20 @@
 	}
 	.project-header {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
-		margin: 0px 20%;
 	}
 }
 .frontEnd {
-	border-right: 1px solid #000000;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-right: 4%;
 	.cards {
 		display: flex;
 		flex-direction: column;
 		.card {
+			padding: 5%;
 			display: flex;
 			flex-direction: row;
 			margin-bottom: 4%;
@@ -80,14 +78,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-left: 4%;
 
 	.cards {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 4%;
 
 		.card {
+			padding: 5%;
+
 			display: flex;
 			flex-direction: row;
 			.body {
@@ -104,24 +102,30 @@
 }
 
 .about-container {
-	display: flex;
-	justify-content: center;
 	background: white;
 	height: 100vh;
-	.about-me {
-		border-right: 1px solid #000000;
-		padding-right: 2%;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: baseline;
+	.about-me-wrapper {
+		width: 100%;
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			padding: 0px 20%;
+		}
 	}
 	.about-skills {
+		width: 100%;
 		display: flex;
-		padding-left: 2%;
-		align-self: flex-start;
 		flex-direction: column;
+		padding-left: 20%;
+		padding-top: 5%;
 		.list {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			padding: 3px;
 			ol {
 				padding: 4px;
 			}
@@ -130,12 +134,12 @@
 }
 
 .navigation {
-	background: #313131;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	height: 60px;
 	justify-content: flex-end;
+	background: #313131;
+	height: 60px;
 	padding-right: 4%;
 	a {
 		padding-left: 5%;
@@ -150,14 +154,14 @@
 }
 
 .footer {
-	background: #313131;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	background: #313131;
 	color: white;
-	position: absolute;
-	bottom: -5px;
+	bottom: 0;
 	width: 100%;
 	height: 50px;
 	a {
@@ -165,5 +169,32 @@
 	}
 	a:hover {
 		color: white;
+	}
+}
+.background {
+	background-image: url("../assets/houston.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	.home {
+		border: 1px solid white;
+		background: white;
+		width: fit-content;
+		margin: 30% auto;
+		padding: 2%;
+		opacity: 70%;
+		.content {
+			color: black;
+			h1 {
+				font-size: 3rem;
+			}
+			.subject {
+				font-size: 1.5rem;
+			}
+		}
 	}
 }

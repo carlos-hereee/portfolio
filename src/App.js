@@ -9,9 +9,6 @@ import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
 import About from "./pages/About";
 
-//css
-import "./App.scss";
-
 function App() {
 	return (
 		<div className="App">
