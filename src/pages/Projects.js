@@ -10,7 +10,7 @@ import "./projectScss.scss";
 export default function Projects() {
 	return (
 		<div className="project-container">
-			<h1 className="title">Projects</h1>
+			<h1>MY PROJECTS</h1>
 			<div className="project-header">
 				<FrontEndProject />
 				<BackEndProject />
@@ -21,21 +21,28 @@ export default function Projects() {
 function FrontEndProject() {
 	return (
 		<div className="frontEnd">
-			<h2>Frontend</h2>
+			<h2>FRONTEND</h2>
+			<div className="img">
+				<a href="https://mesofunny2019.netlify.com/">
+					<img
+						src={mesofunny}
+						alt="mesofunny"
+						style={{ width: "150px" }}
+					/>
+				</a>
+			</div>
 			<div className="cards">
 				<div className="card">
-					<div className="img">
-						<a href="https://mesofunny2019.netlify.com/">
-							<img
-								src={mesofunny}
-								alt="mesofunny"
-								style={{ width: "150px" }}
-							/>
-						</a>
-					</div>
 					<div className="body">
-						<h3>Dad Jokes</h3>
-						<h5>React, Redux</h5>
+						<h3>DAD JOKES</h3>
+						<h5>Front end project using React and Redux</h5>
+
+						<p>
+							You're a funny guy, but you keep losing your list of
+							jokes and forgetting which ones had the best
+							reactions! Well worry no more- Dad (or bad??) jokes
+							app to the rescue.
+						</p>
 						<div className="project-btn">
 							<a href="https://mesofunny2019.netlify.com/">
 								View Site
@@ -47,29 +54,26 @@ function FrontEndProject() {
 								<Icon name="github" size="large" />
 							</a>
 						</div>
-
-						<p>
-							You're a funny guy, but you keep losing your list of
-							jokes and forgetting which ones had the best
-							reactions! Well worry no more- Dad (or bad??) jokes
-							app to the rescue.
-						</p>
 					</div>
 				</div>
 				<div className="cards">
+					<div className="img">
+						<a href="https://nervous-leakey-68fd24.netlify.com/">
+							<img
+								src={school}
+								alt="mesofunny"
+								style={{ width: "150px", height: "150px" }}
+							/>
+						</a>
+					</div>
 					<div className="card">
-						<div className="img">
-							<a href="https://nervous-leakey-68fd24.netlify.com/">
-								<img
-									src={school}
-									alt="mesofunny"
-									style={{ width: "150px", height: "150px" }}
-								/>
-							</a>
-						</div>
 						<div className="body">
-							<h3>School Calendar</h3>
-							<h5>React</h5>
+							<h3>SCHOOL CALENDAR</h3>
+							<h5>Frontend project using React</h5>
+							<p>
+								Help School teacher and coaches coordinate with
+								their students
+							</p>
 							<div className="project-btn">
 								<a href="https://nervous-leakey-68fd24.netlify.com/">
 									View Site
@@ -81,10 +85,6 @@ function FrontEndProject() {
 									<Icon name="github" size="large" />
 								</a>
 							</div>
-							<p>
-								Help School teacher and coaches coordinate with
-								their students
-							</p>
 						</div>
 					</div>
 				</div>
@@ -95,21 +95,24 @@ function FrontEndProject() {
 function BackEndProject() {
 	return (
 		<div className="backend">
-			<h2>Backend</h2>
+			<h2>BACKEND</h2>
+			<div className="img">
+				<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
+					<img src={bnb} alt="mesofunny" style={{ width: "150px" }} />
+				</a>
+			</div>
 			<div className="cards">
 				<div className="card">
-					<div className="img">
-						<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
-							<img
-								src={bnb}
-								alt="mesofunny"
-								style={{ width: "150px" }}
-							/>
-						</a>
-					</div>
 					<div className="body">
-						<h3>Air BNB</h3>
+						<h3>AIR BNB</h3>
 						<h5>Node.js, MySQL</h5>
+
+						<p>
+							An app that uses past AirBnB datasets to determine
+							the optimal pricing of an AirBnB unit based upon
+							features such as geographic location, size,
+							bedrooms, etc.
+						</p>
 						<div className="project-btn">
 							<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
 								View Site
@@ -121,27 +124,27 @@ function BackEndProject() {
 								<Icon name="github" size="large" />
 							</a>
 						</div>
-						<p>
-							An app that uses past AirBnB datasets to determine
-							the optimal pricing of an AirBnB unit based upon
-							features such as geographic location, size,
-							bedrooms, etc.
-						</p>
 					</div>
 				</div>
 				<div className="cards">
+					<div className="img">
+						<a href="https://nervous-leakey-68fd24.netlify.com/">
+							<img
+								src={school}
+								alt="mesofunny"
+								style={{ width: "150px", height: "150px" }}
+							/>
+						</a>
+					</div>
 					<div className="card">
-						<div className="img">
-							<a href="https://nervous-leakey-68fd24.netlify.com/">
-								<img
-									src={school}
-									alt="mesofunny"
-									style={{ width: "150px", height: "150px" }}
-								/>
-							</a>
-						</div>
 						<div className="body">
-							<h3>School Calendar</h3>
+							<h3>SCHOOL CALENDAR</h3>
+
+							<h5>React</h5>
+							<p>
+								Help School teacher and coaches coordinate with
+								their students
+							</p>
 							<div className="project-btn">
 								<a href="https://nervous-leakey-68fd24.netlify.com/">
 									View Site
@@ -153,11 +156,6 @@ function BackEndProject() {
 									<Icon name="github" size="large" />
 								</a>
 							</div>
-							<h5>React</h5>
-							<p>
-								Help School teacher and coaches coordinate with
-								their students
-							</p>
 						</div>
 					</div>
 				</div>
