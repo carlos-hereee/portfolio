@@ -12,38 +12,26 @@ export default function Projects() {
 		<div className="project-container">
 			<h1>MY PROJECTS</h1>
 			<div className="project-header">
-				<FrontEndProject />
-				<BackEndProject />
-			</div>
-		</div>
-	);
-}
-function FrontEndProject() {
-	return (
-		<div className="frontEnd">
-			<h2>FRONTEND</h2>
-			<div className="img">
-				<a href="https://mesofunny2019.netlify.com/">
-					<img
-						src={mesofunny}
-						alt="mesofunny"
-						style={{ width: "150px" }}
-					/>
-				</a>
-			</div>
-			<div className="cards">
-				<div className="card">
+				<div className="dad-jokes">
+					<div className="dad-jokes-img">
+						<a href="https://mesofunny2019.netlify.com/">
+							<img
+								src={mesofunny}
+								alt="mesofunny"
+								style={{ width: "150px" }}
+							/>
+						</a>
+					</div>
 					<div className="body">
 						<h3>DAD JOKES</h3>
 						<h5>Front end project using React and Redux</h5>
-
 						<p>
 							You're a funny guy, but you keep losing your list of
 							jokes and forgetting which ones had the best
 							reactions! Well worry no more- Dad (or bad??) jokes
 							app to the rescue.
 						</p>
-						<div className="project-btn">
+						<div className="btn">
 							<a href="https://mesofunny2019.netlify.com/">
 								View Site
 							</a>
@@ -56,8 +44,28 @@ function FrontEndProject() {
 						</div>
 					</div>
 				</div>
-				<div className="cards">
-					<div className="img">
+				<div className="school-calendar">
+					<div className="body">
+						<h3>SCHOOL CALENDAR</h3>
+						<h5>Backend project using Node.js and MySQL</h5>
+						<h5>Frontend project using React</h5>
+						<p>
+							Help School teacher and coaches coordinate with
+							their students
+						</p>
+						<div className="btn">
+							<a href="https://nervous-leakey-68fd24.netlify.com/">
+								View Site
+							</a>
+							<a
+								href="https://github.com/Lambda-School-Labs/school-calendar-fe"
+								style={{ color: "black" }}
+							>
+								<Icon name="github" size="large" />
+							</a>
+						</div>
+					</div>
+					<div className="school-calendar-img">
 						<a href="https://nervous-leakey-68fd24.netlify.com/">
 							<img
 								src={school}
@@ -66,43 +74,17 @@ function FrontEndProject() {
 							/>
 						</a>
 					</div>
-					<div className="card">
-						<div className="body">
-							<h3>SCHOOL CALENDAR</h3>
-							<h5>Frontend project using React</h5>
-							<p>
-								Help School teacher and coaches coordinate with
-								their students
-							</p>
-							<div className="project-btn">
-								<a href="https://nervous-leakey-68fd24.netlify.com/">
-									View Site
-								</a>
-								<a
-									href="https://github.com/Lambda-School-Labs/school-calendar-fe"
-									style={{ color: "black" }}
-								>
-									<Icon name="github" size="large" />
-								</a>
-							</div>
-						</div>
-					</div>
 				</div>
-			</div>
-		</div>
-	);
-}
-function BackEndProject() {
-	return (
-		<div className="backend">
-			<h2>BACKEND</h2>
-			<div className="img">
-				<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
-					<img src={bnb} alt="mesofunny" style={{ width: "150px" }} />
-				</a>
-			</div>
-			<div className="cards">
-				<div className="card">
+				<div className="air-bnb">
+					<div className="air-bnb-img">
+						<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
+							<img
+								src={bnb}
+								alt="bnb"
+								style={{ width: "150px" }}
+							/>
+						</a>
+					</div>
 					<div className="body">
 						<h3>AIR BNB</h3>
 						<h5>Node.js, MySQL</h5>
@@ -113,7 +95,7 @@ function BackEndProject() {
 							features such as geographic location, size,
 							bedrooms, etc.
 						</p>
-						<div className="project-btn">
+						<div className="btn">
 							<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
 								View Site
 							</a>
@@ -123,39 +105,6 @@ function BackEndProject() {
 							>
 								<Icon name="github" size="large" />
 							</a>
-						</div>
-					</div>
-				</div>
-				<div className="cards">
-					<div className="img">
-						<a href="https://nervous-leakey-68fd24.netlify.com/">
-							<img
-								src={school}
-								alt="mesofunny"
-								style={{ width: "150px", height: "150px" }}
-							/>
-						</a>
-					</div>
-					<div className="card">
-						<div className="body">
-							<h3>SCHOOL CALENDAR</h3>
-
-							<h5>React</h5>
-							<p>
-								Help School teacher and coaches coordinate with
-								their students
-							</p>
-							<div className="project-btn">
-								<a href="https://nervous-leakey-68fd24.netlify.com/">
-									View Site
-								</a>
-								<a
-									href="https://github.com/Lambda-School-Labs/school-calendar-be"
-									style={{ color: "black" }}
-								>
-									<Icon name="github" size="large" />
-								</a>
-							</div>
 						</div>
 					</div>
 				</div>
