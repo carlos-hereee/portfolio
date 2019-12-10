@@ -7,7 +7,7 @@ import "./projectScss.scss";
 export default function Navigation() {
 	return (
 		<div className="footer">
-			<a href="https://www.linkedin.com/in/carlos-hernandez-066729179/">
+			<a href="https://www.linkedin.com/in/ch04937-carlos-hernandez/">
 				<Icon name="linkedin" size="big" />
 			</a>
 			<a href="https://www.github.com/ch04937">
