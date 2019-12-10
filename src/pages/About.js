@@ -39,7 +39,7 @@ export default function AboutMe() {
 					Designers. We were able to tackle tough projects with
 					effective communication.
 				</p>
-				<h1>MY TECH SKILLS</h1>
+				<h1 style={{ textAlign: "center" }}>MY TECH SKILLS</h1>
 				<ul className="list">
 					<ol>HTML</ol>
 					<ol>CSS & SCSS</ol>
