@@ -69,7 +69,7 @@ export default function Projects() {
 						<a href="https://nervous-leakey-68fd24.netlify.com/">
 							<img
 								src={school}
-								alt="mesofunny"
+								alt="school calendar"
 								style={{ width: "150px", height: "150px" }}
 							/>
 						</a>
@@ -77,7 +77,7 @@ export default function Projects() {
 				</div>
 				<div className="air-bnb">
 					<div className="air-bnb-img">
-						<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
+						<a href="https://frontend.surfsol.now.sh/">
 							<img
 								src={bnb}
 								alt="bnb"
@@ -96,7 +96,7 @@ export default function Projects() {
 							bedrooms, etc.
 						</p>
 						<div className="btn">
-							<a href="https://frontend-git-master.surfsol.now.sh/dashboard">
+							<a href="https://frontend.surfsol.now.sh/">
 								View Site
 							</a>
 							<a
