@@ -3,8 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 
 import App from "./App";
+// import WebFont from "webfontloader";
 
-import "./index.css";
 import "semantic-ui-css/semantic.min.css";
 
 ReactDOM.render(
