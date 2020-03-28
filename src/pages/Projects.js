@@ -24,7 +24,7 @@ export default function Projects() {
 					</div>
 					<div className="body">
 						<h3>DAD JOKES</h3>
-						<h5>Front end project using React and Redux</h5>
+						<h5>Front end project using React</h5>
 						<p>
 							You're a funny guy, but you keep losing your list of
 							jokes and forgetting which ones had the best
@@ -32,7 +32,7 @@ export default function Projects() {
 							app to the rescue.
 						</p>
 						<div className="btn">
-							<a href="https://mesofunny2019.netlify.com/">
+							<a href="https://dadjokes-seven.now.sh/">
 								View Site
 							</a>
 							<a
