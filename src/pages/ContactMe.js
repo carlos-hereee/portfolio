@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Field, withFormik } from "formik";
 import * as Yup from "yup";
 
-import "./projectScss.scss";
+import "./pages.scss";
 
 function ContactMe() {
 	return (
@@ -10,8 +10,8 @@ function ContactMe() {
 			<div className="header">
 				<h1 className="title">Contact</h1>
 				<p>
-					Email me at 97hernandez.c@gmail.com or fill out the form
-					below. Thanks!
+					Email me at 97hernandez.c@gmail.com or fill out the form below.
+					Thanks!
 				</p>
 			</div>
 			<div className="form">

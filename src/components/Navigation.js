@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../pages/projectScss.scss";
+import "../pages/pages.scss";
 
 export default function Navigation() {
 	return (
