@@ -83,7 +83,7 @@ $mobile: "only screen and (max-width: 500px)";
 		justify-content: space-around;
 		margin: auto;
 		max-width: 1000px;
-		.dad-jokes {
+		.project-name {
 			display: flex;
 			text-align: left;
 			max-width: 600px;
@@ -92,8 +92,8 @@ $mobile: "only screen and (max-width: 500px)";
 				flex-direction: column;
 				text-align: center;
 			}
-			.dad-jokes-img {
-				margin-right: 3%;
+			.project-img {
+				margin: 0 1rem;
 				@media #{$mobile} {
 					margin: auto;
 				}
@@ -107,62 +107,11 @@ $mobile: "only screen and (max-width: 500px)";
 				}
 			}
 		}
-		.school-calendar {
-			display: flex;
-			justify-content: flex-end;
-			text-align: right;
-			margin: 7% 0;
-			@media #{$mobile} {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				.img {
-					order: -1;
-					@media #{$mobile} {
-						margin: auto;
-					}
-				}
-				.body {
-					order: 1;
-				}
-			}
-
-			.school-calendar-img {
-				margin-left: 3%;
-			}
+		&:nth-child(odd) {
+			@include flex(flex-end, row);
 			.body {
-				max-width: 400px;
-				.btn {
-					width: 150px;
-					display: flex;
-					justify-content: space-around;
-					margin-left: auto;
-					@media #{$mobile} {
-						margin: auto;
-					}
-				}
-			}
-		}
-		.air-bnb {
-			display: flex;
-			text-align: left;
-			max-width: 600px;
-			@media #{$mobile} {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-			}
-
-			.air-bnb-img {
-				margin-right: 3%;
-			}
-			.btn {
-				width: 150px;
-				display: flex;
-				justify-content: space-around;
-				@media #{$mobile} {
-					margin: auto;
-				}
+				order: -1;
+				text-align: right;
 			}
 		}
 	}
