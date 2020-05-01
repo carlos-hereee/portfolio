@@ -4,11 +4,9 @@ $mobile: "only screen and (max-width: 500px)";
 	justify-content: $content;
 	flex-direction: $direction;
 }
+
 .navigation {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-	justify-content: flex-end;
+	@include flex(flex-end, row);
 	background: #313131;
 	height: 60px;
 	padding-right: 4%;
@@ -18,9 +16,6 @@ $mobile: "only screen and (max-width: 500px)";
 		text-decoration: none;
 		display: flex;
 		align-items: center;
-	}
-	:active {
-		color: black;
 	}
 }
 .content {
@@ -36,9 +31,7 @@ $mobile: "only screen and (max-width: 500px)";
 }
 
 .about-me {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
+	@include flex(space-around, row);
 	max-width: 1000px;
 	margin: auto;
 	padding-bottom: 10%;
@@ -84,9 +77,8 @@ $mobile: "only screen and (max-width: 500px)";
 		margin: auto;
 		max-width: 1000px;
 		.project-name {
-			display: flex;
 			text-align: left;
-			max-width: 600px;
+			max-width: 400px;
 			@media #{$mobile} {
 				display: flex;
 				flex-direction: column;
@@ -99,11 +91,16 @@ $mobile: "only screen and (max-width: 500px)";
 				}
 			}
 			.btn {
-				display: flex;
-				width: 150px;
-				justify-content: space-around;
+				@include flex(space-around, row);
 				@media #{$mobile} {
 					margin: auto;
+				}
+			}
+			.body {
+				&:hover {
+					border: 1px solid;
+					padding: 10px;
+					box-shadow: 5px 10px #888888;
 				}
 			}
 		}
