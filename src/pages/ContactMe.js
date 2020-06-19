@@ -1,60 +1,72 @@
 import React from "react";
-import { Form, Field, withFormik } from "formik";
-import * as Yup from "yup";
+import { Form, Field, Formik } from "formik";
 
-import "./pages.scss";
+import styles from "../stylesheets/form.module.scss";
+
+function validateEmail(value) {
+	let error;
+	if (!value) {
+		error = "*Email is a Required Field";
+	} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+		error = "*Invalid email address";
+	}
+	return error;
+}
+
+function contactMe(msg) {
+	console.log("msg", msg);
+}
 
 function ContactMe() {
 	return (
-		<div className="contact-container">
-			<div className="header">
-				<h1 className="title">Contact</h1>
+		<>
+			<div style={{ textAlign: "center" }}>
+				<h1>Contact</h1>
 				<p>
-					Email me at 97hernandez.c@gmail.com or fill out the form below.
-					Thanks!
+					Email me at 97hernandez.c@gmail.com or fill out the form
+					below. Thanks!
 				</p>
 			</div>
-			<div className="form">
-				<Form>
-					<div className="field">
-						<p>Name * </p>
-						<Field type="name" name="name" />
-					</div>
-					<div className="field">
-						<p>Email * </p>
-						<Field type="email" name="email" />
-					</div>
-					<div className="field">
-						<p>Subject </p>
-						<Field type="text" name="subject" />
-					</div>
-					<div className="field-message">
-						<p>Message * </p>
-						<Field type="text" name="message" />
-					</div>
-					<div className="btn">
-						<button className="submit" type="submit">
-							Submit
-						</button>
-					</div>
-				</Form>
+			<div className={styles.wrapper}>
+				<Formik
+					initialValues={{
+						name: "",
+						email: "",
+						subject: "",
+						message: "",
+					}}
+					onSubmit={(values, actions) => {
+						contactMe(values);
+					}}
+				>
+					{({ errors, touched, validateForm }) => (
+						<Form className={styles.form}>
+							<label>Name</label>
+							<Field type="text" name="name" />
+							<label>Email</label>
+							<Field
+								type="email"
+								name="email"
+								validate={validateEmail}
+							/>
+							{errors.email && touched.email && (
+								<div className={styles.validate}>
+									{errors.email}
+								</div>
+							)}
+							<label>Subject</label>
+							<Field type="text" name="subject" />
+							<label>Message</label>
+							<Field type="text" name="message" />
+							<button type="submit" onClick={() => validateForm}>
+								Submit
+							</button>
+						</Form>
+					)}
+				</Formik>
 			</div>
-		</div>
+		</>
 	);
 }
-const FormikContact = withFormik({
-	mapPropsToValues({ name, email, message }) {
-		return {
-			name: name || "",
-			email: email || "",
-			message: message || "",
-		};
-	},
-	validationSchema: Yup.object().shape({
-		name: Yup.string().required("Name is a required field"),
-		email: Yup.string().required("Email is a required field"),
-		message: Yup.string().required("Message is a required field"),
-	}),
-})(ContactMe);
 
-export default FormikContact;
+export default ContactMe;

@@ -2,7 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 //adding components
-import Navigation from "./components/Navigation";
+import Navigation from "./pages/Navigation";
 import ContactMe from "./pages/ContactMe";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";

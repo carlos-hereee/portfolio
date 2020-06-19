@@ -3,7 +3,7 @@ import { client } from "../utils/axios";
 
 import { Icon, Loader } from "semantic-ui-react";
 
-import "./pages.scss";
+import "../stylesheets/pages.scss";
 
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
@@ -15,6 +15,7 @@ export default function Projects() {
 		}
 		getProjects();
 	}, []);
+	// https://deploy-preview-127--labs17-school-calendar.netlify.app/
 	return (
 		<div className="project-container">
 			<h1>MY PROJECTS</h1>

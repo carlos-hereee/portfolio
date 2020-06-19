@@ -1,0 +1,35 @@
+.validate {
+	color: red;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.form {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+	input {
+		padding: 10px 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+	}
+	button {
+		background-color: #313131;
+		color: whitesmoke;
+		padding: 1rem;
+		border: none;
+		border-radius: 4px;
+		margin: 0px auto;
+		box-shadow: 0 5px #666;
+	}
+	button:hover {
+		background-color: black;
+	}
+	button:active {
+		background-color: black;
+		transform: translateY(4px);
+	}
+}

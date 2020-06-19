@@ -2,11 +2,11 @@ import React from "react";
 
 import { Icon } from "semantic-ui-react";
 
-import "./pages.scss";
+import styles from "../stylesheets/header_footer.module.scss";
 
 export default function Navigation() {
 	return (
-		<div className="footer">
+		<div className={styles.footer}>
 			<a href="https://www.linkedin.com/in/ch04937-carlos-hernandez/">
 				<Icon name="linkedin" size="big" />
 			</a>

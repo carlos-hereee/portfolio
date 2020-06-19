@@ -2,7 +2,7 @@ import React from "react";
 
 import Pic from "../assets/carlos-hernandez-picture.PNG";
 
-import "./pages.scss";
+import "../stylesheets/pages.scss";
 
 export default function AboutMe() {
 	return (
