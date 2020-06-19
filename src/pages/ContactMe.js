@@ -1,20 +1,19 @@
 import React from "react";
 import { Form, Field, Formik } from "formik";
 
-import styles from "../stylesheets/form.module.scss";
+import { client } from "../utils/axios";
+import {
+	validateSubject,
+	validateMessage,
+	validateEmail,
+	validateName,
+} from "../utils/validate";
 
-function validateEmail(value) {
-	let error;
-	if (!value) {
-		error = "*Email is a Required Field";
-	} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-		error = "*Invalid email address";
-	}
-	return error;
-}
+import styles from "../stylesheets/form.module.scss";
 
 function contactMe(msg) {
 	console.log("msg", msg);
+	client().post("/msg", msg);
 }
 
 function ContactMe() {
@@ -37,27 +36,57 @@ function ContactMe() {
 					}}
 					onSubmit={(values, actions) => {
 						contactMe(values);
+						actions.resetForm();
 					}}
 				>
 					{({ errors, touched, validateForm }) => (
 						<Form className={styles.form}>
 							<label>Name</label>
-							<Field type="text" name="name" />
-							<label>Email</label>
+							{errors.name && touched.name && (
+								<div className={styles.validate}>
+									{errors.name}
+								</div>
+							)}
 							<Field
-								type="email"
-								name="email"
-								validate={validateEmail}
+								type="text"
+								name="name"
+								validate={validateName}
 							/>
+							<label>Email</label>
 							{errors.email && touched.email && (
 								<div className={styles.validate}>
 									{errors.email}
 								</div>
 							)}
+							<Field
+								type="email"
+								name="email"
+								validate={validateEmail}
+							/>
 							<label>Subject</label>
-							<Field type="text" name="subject" />
+							{errors.subject && touched.subject && (
+								<div className={styles.validate}>
+									{errors.subject}
+								</div>
+							)}
+							<Field
+								type="text"
+								name="subject"
+								validate={validateSubject}
+							/>
+
 							<label>Message</label>
-							<Field type="text" name="message" />
+							{errors.message && touched.message && (
+								<div className={styles.validate}>
+									{errors.message}
+								</div>
+							)}
+							<Field
+								type="text"
+								name="message"
+								component="textarea"
+								validate={validateMessage}
+							/>
 							<button type="submit" onClick={() => validateForm}>
 								Submit
 							</button>
