@@ -14,14 +14,21 @@ export default function Projects() {
 			setProjects(projects);
 		}
 		getProjects();
-	}, []);
+	}, [projects]);
 	// https://deploy-preview-127--labs17-school-calendar.netlify.app/
+	function project(e) {
+		client().post("/projects", { new_project: e });
+	}
 	return (
 		<div className={styles.project}>
-			<h1>MY PROJECTS</h1>
+			<h1>PROJECTS</h1>
 			{projects && projects ? (
 				projects.map((data) => (
-					<div key={data.id} className={styles.header}>
+					<div
+						key={data.id}
+						className={styles.header}
+						onClick={() => project(data.id)}
+					>
 						<div className={styles.name}>
 							<div className={styles.body}>
 								<h3>{data.title}</h3>

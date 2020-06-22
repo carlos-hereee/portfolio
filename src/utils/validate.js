@@ -28,3 +28,9 @@ export function validateName(value) {
 	}
 	return error;
 }
+
+export function required(value) {
+	let error;
+	if (!value) error = "Required";
+	return error;
+}
