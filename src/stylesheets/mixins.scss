@@ -1,5 +1,9 @@
+// create mixin
 @mixin flex($content, $direction) {
 	display: flex;
 	justify-content: $content;
 	flex-direction: $direction;
 }
+
+// mobile media query
+$mobile: "only screen and (max-width: 500px)";

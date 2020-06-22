@@ -1,0 +1,47 @@
+@import "./mixins.scss";
+.wrapper {
+	@include flex(space-around, row);
+}
+
+.project {
+	text-align: center;
+	width: 100%;
+	@media #{$mobile} {
+		max-width: 400px;
+		margin: auto;
+	}
+
+	.header {
+		@include flex(space-around, column);
+		margin: auto;
+		max-width: 1000px;
+		.name {
+			text-align: left;
+			max-width: 400px;
+			@media #{$mobile} {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+			.body {
+				&:hover {
+					border: 1px solid;
+					padding: 10px;
+					box-shadow: 3px 2px #888888;
+				}
+				.btn {
+					@include flex(space-around, row);
+					@media #{$mobile} {
+						margin: auto;
+					}
+				}
+			}
+		}
+		&:nth-child(odd) {
+			@include flex(flex-end, row);
+			.body {
+				text-align: right;
+			}
+		}
+	}
+}
