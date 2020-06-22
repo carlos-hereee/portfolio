@@ -1,5 +1,19 @@
 @import "./mixins.scss";
 
+.nav {
+	@include flex(flex-end, row);
+	background: #313131;
+	height: 60px;
+	padding-right: 4%;
+	a {
+		padding-left: 5%;
+		color: white;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+}
+
 .footer {
 	@include flex(center, row);
 	align-items: center;

@@ -7,17 +7,17 @@ import "../stylesheets/pages.scss";
 
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
-	useEffect(() => {
-		async function getProjects() {
-			const get = await client().get("/projects");
-			const { projects } = get.data;
-			setProjects(projects);
-		}
-		getProjects();
-	}, []);
+	// useEffect(() => {
+	// 	async function getProjects() {
+	// 		const get = await client().get("/projects");
+	// 		const { projects } = get.data;
+	// 		setProjects(projects);
+	// 	}
+	// 	getProjects();
+	// }, []);
 	// https://deploy-preview-127--labs17-school-calendar.netlify.app/
 	return (
-		<div className="project-container">
+		<>
 			<h1>MY PROJECTS</h1>
 			{projects && projects ? (
 				projects.map((data) => (
@@ -43,6 +43,6 @@ export default function Projects() {
 			) : (
 				<Loader indeterminate>Loading</Loader>
 			)}
-		</div>
+		</>
 	);
 }
