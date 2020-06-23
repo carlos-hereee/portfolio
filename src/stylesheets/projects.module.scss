@@ -3,6 +3,16 @@
 	@include flex(space-around, row);
 }
 
+.del_btn {
+	background: red;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 4px;
+	color: whitesmoke;
+	&:hover {
+		background: rgb(187, 3, 3);
+	}
+}
 .project {
 	text-align: center;
 	width: 100%;
@@ -10,7 +20,6 @@
 		max-width: 400px;
 		margin: auto;
 	}
-
 	.header {
 		@include flex(space-around, column);
 		margin: auto;
@@ -25,9 +34,8 @@
 			}
 			.body {
 				&:hover {
-					border: 1px solid;
-					padding: 10px;
-					box-shadow: 3px 2px #888888;
+					border: 1px solid black;
+					padding: 3px;
 				}
 				.btn {
 					@include flex(space-around, row);

@@ -18,7 +18,7 @@ export default function Project() {
 	return (
 		<div className={styles.wrapper}>
 			<Projects />
-			{dev ? (
+			{dev === "true" ? (
 				<div>
 					<Formik
 						initialValues={{
