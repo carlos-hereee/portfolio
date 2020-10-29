@@ -1,55 +1,46 @@
 @import "./mixins.scss";
 .wrapper {
-	@include flex(space-around, row);
+  @include flex(space-around, row);
 }
-
-.del_btn {
-	background: red;
-	border: none;
-	padding: 8px 15px;
-	border-radius: 4px;
-	color: whitesmoke;
-	&:hover {
-		background: rgb(187, 3, 3);
-	}
+.title {
+  text-align: center;
+  padding-bottom: 5rem;
 }
 .project {
-	text-align: center;
-	width: 100%;
-	@media #{$mobile} {
-		max-width: 400px;
-		margin: auto;
-	}
-	.header {
-		@include flex(space-around, column);
-		margin: auto;
-		max-width: 1000px;
-		.name {
-			text-align: left;
-			max-width: 400px;
-			@media #{$mobile} {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-			}
-			.body {
-				&:hover {
-					border: 1px solid black;
-					padding: 3px;
-				}
-				.btn {
-					@include flex(space-around, row);
-					@media #{$mobile} {
-						margin: auto;
-					}
-				}
-			}
-		}
-		&:nth-child(odd) {
-			@include flex(flex-end, row);
-			.body {
-				text-align: right;
-			}
-		}
-	}
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media #{$mobile} {
+    max-width: 400px;
+    margin: auto;
+  }
+  .card {
+    text-align: left;
+    box-shadow: 0 0 5px 5px #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    .link {
+      width: 100%;
+      cursor: pointer;
+      .btn {
+        border-radius: 4px;
+        background-color: white;
+        width: 100%;
+        border: #f0f0f0;
+        padding: 1rem 0;
+        cursor: pointer;
+        &:hover {
+          padding: 1rem 0;
+          background-color: rgb(189, 189, 189);
+        }
+      }
+    }
+  }
 }

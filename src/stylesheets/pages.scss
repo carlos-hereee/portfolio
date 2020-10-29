@@ -4,10 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 2rem 0;
   .about-me-profile-container {
-    margin: auto;
     text-align: center;
-    padding: 2rem 0;
     @media #{$mobile} {
       width: 16rem;
     }
@@ -18,17 +17,19 @@
       }
     }
   }
-  .about-me-content {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    @media #{$mobile} {
-      padding: 0 1rem;
-    }
-    .skills {
+  .about-me-content-container {
+    .about-me-content {
+      max-width: 600px;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      flex-direction: column;
+      @media #{$mobile} {
+        padding: 0 1rem;
+      }
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
     }
   }
 }

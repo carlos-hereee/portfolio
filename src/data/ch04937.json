@@ -14,5 +14,21 @@
       "Node.js",
       "MySql3"
     ]
-  }
+  },
+  "projects": [
+    {
+      "name": "Doctor Website",
+      "tech_stack": "Front End - Next.js with Typescript in the front end",
+      "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
+      "github_url": "https://github.com/VitauMX/vitau-doctors",
+      "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
+    },
+    {
+      "name": "School Calendar",
+      "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
+      "description": "Help School teacher and coaches coordinate with their students",
+      "github_url": "https://github.com/mesofunny/front-end",
+      "project_url": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
+    }
+  ]
 }

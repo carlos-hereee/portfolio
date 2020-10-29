@@ -37,17 +37,21 @@ export default function AboutMe() {
         />
         <p>{profile.bio}</p>
       </div>
-      <div className="about-me-content">
-        <h3>About Me</h3>
-        <p>{`${data.header}, ${data.subHeader}`}</p>
-        <h3>What brought me here?</h3>
-        <p>{data.reason}</p>
-        <h3>Why I enjoy coding?</h3>
-        <p>{data.why}</p>
-        <h1>MY TECH SKILLS</h1>
-        <div className="skills">
-          {data &&
-            data.skills.map((item) => <p key={shortid.generate()}>{item} |</p>)}
+      <div className="about-me-content-container">
+        <div className="about-me-content">
+          <h3>About Me</h3>
+          <p>{`${data.header}, ${data.subHeader}`}</p>
+          <h3>What brought me here?</h3>
+          <p>{data.reason}</p>
+          <h3>Why I enjoy coding?</h3>
+          <p>{data.why}</p>
+          <h3>MY TECH SKILLS</h3>
+          <div className="skills">
+            {data &&
+              data.skills.map((item) => (
+                <p key={shortid.generate()}>{item} |</p>
+              ))}
+          </div>
         </div>
       </div>
     </div>
