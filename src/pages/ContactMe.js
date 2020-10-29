@@ -12,8 +12,7 @@ import {
 import styles from "../stylesheets/form.module.scss";
 
 function contactMe(msg) {
-	console.log("msg", msg);
-	client().post("/msg", msg);
+	client().post("/mail", msg);
 }
 
 function ContactMe() {

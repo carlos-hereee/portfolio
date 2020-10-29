@@ -1,57 +1,55 @@
-import React from "react";
-
-import Pic from "../assets/carlos-hernandez-picture.PNG";
-
+import React, { useEffect, useState } from "react";
+import ch04937 from "../data/ch04937.json";
+import shortid from "shortid";
 import "../stylesheets/pages.scss";
 
 export default function AboutMe() {
-	return (
-		<div className="about-me">
-			<div className="img">
-				<img src={Pic} alt="img" />
-			</div>
-			<div className="about-me-content">
-				<h1 style={{ textAlign: "center" }}>ABOUT ME</h1>
-				<h2>
-					I am Carlos Hernandez, full stack web developer from
-					Houston, Texas
-				</h2>
-				<h3>
-					I'm currently sharpening my skills and learning lots of new
-					technologies on a Lambda School's team
-				</h3>
-				<h3>What brought me here?</h3>
-				<p>
-					When I was in the 5th grade. I had never seen a computer
-					before in my life and I had the computer lab as part of my
-					one of my objectives. The first we had to do in the class
-					were typing lessons. I remember it was the coolest thing
-					ever. I pressed a key in the keyboard and I remember I
-					geeked out so bad. Other students were making fun of me but
-					I did not care. I continued to geek out.
-				</p>
-				<h3>My current time in Lambda School/ Why I enjoy coding?</h3>
-				<p>
-					To this day I do not regret sign up to be a Lambda School. I
-					learned everything from a vanilla HTML to building
-					functional and deploying websites. Working in a team of
-					developers and collaborating with Data Scientist and UX
-					Designers. We were able to tackle tough projects with
-					effective communication.
-				</p>
-				<h1 style={{ textAlign: "center" }}>MY TECH SKILLS</h1>
-				<ul className="list">
-					<ol>HTML</ol>
-					<ol>CSS & SCSS</ol>
-					<ol>JavaScript</ol>
-					<ol>React</ol>
-					<ol>Redux</ol>
+  const [profile, setProfile] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [error, setError] = useState("");
+  useEffect(() => {
+    fetch("https://api.github.com/users/ch04937")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setProfile(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
+  const data = ch04937.about;
 
-					<ol>Firebase</ol>
-					<ol>Node.js</ol>
-					<ol>MySQL</ol>
-				</ul>
-			</div>
-		</div>
-	);
+  return error ? (
+    <div>ERROR: {error.message}</div>
+  ) : !isLoaded ? (
+    <div>Loading ... </div>
+  ) : (
+    <div className="about-me">
+      <div className="about-me-profile-container">
+        <img
+          src={profile.avatar_url}
+          alt="Carlos Hernandez profile"
+          className="profile"
+        />
+        <p>{profile.bio}</p>
+      </div>
+      <div className="about-me-content">
+        <h3>About Me</h3>
+        <p>{`${data.header}, ${data.subHeader}`}</p>
+        <h3>What brought me here?</h3>
+        <p>{data.reason}</p>
+        <h3>Why I enjoy coding?</h3>
+        <p>{data.why}</p>
+        <h1>MY TECH SKILLS</h1>
+        <div className="skills">
+          {data &&
+            data.skills.map((item) => <p key={shortid.generate()}>{item} |</p>)}
+        </div>
+      </div>
+    </div>
+  );
 }

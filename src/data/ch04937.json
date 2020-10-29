@@ -1,0 +1,18 @@
+{
+  "about": {
+    "header": "I am Carlos Hernandez, full stack web developer from Houston, Texas",
+    "subHeader": "I'm currently sharpening my skills and learning lots of new technologies",
+    "reason": "The fist time I saw a in my life and I had the computer lab in the 5th grade. It was the coolest thing ever I pressed a key in the keyboard and it appeared on the monitor",
+    "why": "From the first line of code to last project I worked, I keep learning new things, new technologies, new best pratices and there's always something more to learn, and that's my favorite part about being a programmer!",
+    "skills": [
+      "HTML",
+      "CSS & SCSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Firebase",
+      "Node.js",
+      "MySql3"
+    ]
+  }
+}
