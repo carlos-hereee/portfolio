@@ -1,0 +1,32 @@
+@import "./mixins.scss";
+
+.nav {
+  @include flex(flex-end, row);
+  background: #313131;
+  height: 60px;
+  padding-right: 4%;
+  a {
+    padding-left: 5%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: #313131;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}

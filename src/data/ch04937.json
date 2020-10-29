@@ -1,0 +1,34 @@
+{
+  "about": {
+    "header": "I am Carlos Hernandez, full stack web developer from Houston, Texas",
+    "subHeader": "I'm currently sharpening my skills and learning lots of new technologies",
+    "reason": "The fist time I saw a in my life and I had the computer lab in the 5th grade. It was the coolest thing ever I pressed a key in the keyboard and it appeared on the monitor",
+    "why": "From the first line of code to last project I worked, I keep learning new things, new technologies, new best pratices and there's always something more to learn, and that's my favorite part about being a programmer!",
+    "skills": [
+      "HTML",
+      "CSS & SCSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Firebase",
+      "Node.js",
+      "MySql3"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Doctor Website",
+      "tech_stack": "Front End - Next.js with Typescript in the front end",
+      "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
+      "github_url": "https://github.com/VitauMX/vitau-doctors",
+      "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
+    },
+    {
+      "name": "School Calendar",
+      "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
+      "description": "Help School teacher and coaches coordinate with their students",
+      "github_url": "https://github.com/mesofunny/front-end",
+      "project_url": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
+    }
+  ]
+}

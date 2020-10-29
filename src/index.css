@@ -1,3 +1,10 @@
 body {
-	font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
 }
