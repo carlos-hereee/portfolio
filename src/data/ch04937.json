@@ -5,23 +5,57 @@
     "reason": "The fist time I saw a in my life and I had the computer lab in the 5th grade. It was the coolest thing ever I pressed a key in the keyboard and it appeared on the monitor",
     "why": "From the first line of code to last project I worked, I keep learning new things, new technologies, new best pratices and there's always something more to learn, and that's my favorite part about being a programmer!",
     "skills": [
-      "HTML",
-      "CSS & SCSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Firebase",
-      "Node.js",
-      "MySql3"
+      {
+        "name": "HTML5",
+        "src": "https://mpng.subpng.com/20180802/tpl/kisspng-logo-html5-brand-clip-art-%E6%9D%89-%E5%B1%B1-%E8%89%AF-%E9%9B%84-5b62be01b565d5.334247781533197825743.jpg"
+      },
+      {
+        "name": "CSS",
+        "src": "https://w7.pngwing.com/pngs/804/171/png-transparent-web-development-cascading-style-sheets-css3-html-world-wide-web-blue-angle-web-design.png"
+      },
+      {
+        "name": "Sass",
+        "src": "https://e7.pngegg.com/pngimages/33/52/png-clipart-sass-logo-cascading-style-sheets-scalable-graphics-less-text-logo.png"
+      },
+      {
+        "name": "JavaScript",
+        "src": "https://i1.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?ssl=1"
+      },
+      {
+        "name": "TypeScript",
+        "src": "https://iconape.com/wp-content/files/fh/110909/png/typescript.png"
+      },
+      {
+        "name": "Firebase",
+        "src": "https://icon2.cleanpng.com/20180417/irq/kisspng-firebase-cloud-messaging-computer-icons-google-clo-github-5ad5d3cde70706.9853526815239628299463.jpg"
+      },
+      {
+        "name": "Node.js",
+        "src": "https://e7.pngegg.com/pngimages/353/697/png-clipart-node-js-javascript-front-and-back-ends-computer-software-others-miscellaneous-angle-thumbnail.png"
+      }
     ]
   },
   "projects": [
     {
       "name": "Doctor Website",
-      "tech_stack": "Front End - Next.js with Typescript in the front end",
+      "tech_stack": "Front End - Next.js with Typescript",
       "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
       "github_url": "https://github.com/VitauMX/vitau-doctors",
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
+    },
+    {
+      "name": "Ark Planner",
+      "tech_stack": "Front End - React.js",
+      "description": "A planner for a competitive gamer community to help the organizers coordinate with everyone about current game events to maximize participation.",
+      "github_url": "https://github.com/ch04937/arc-planner",
+      "project_url": "https://arc-planner-avuww7k5o.vercel.app/"
+    },
+    {
+      "name": "Vaccine Tracker",
+      "tech_stack": "Front End - React.js",
+      "description": "A Vaccine/Treatment RnD tracker for easily getting the latest SARS-CoV2/COVID-19 research and clinical trials happening all over the world.",
+      "github_url": "https://github.com/ncov19-us/ncov19-vacc-dash-front-end",
+      "project_url": "https://vaccine.ncov19.us/"
     },
     {
       "name": "School Calendar",

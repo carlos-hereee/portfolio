@@ -49,7 +49,14 @@ export default function AboutMe() {
           <div className="skills">
             {data &&
               data.skills.map((item) => (
-                <p key={shortid.generate()}>{item} |</p>
+                <div className="skill">
+                  <p key={shortid.generate()}>{item.name} </p>
+                  <img
+                    src={item.src}
+                    alt={`icon of ${item.name}`}
+                    className="icon"
+                  />
+                </div>
               ))}
           </div>
         </div>
