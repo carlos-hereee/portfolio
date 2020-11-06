@@ -1,9 +1,9 @@
 {
   "about": {
-    "header": "I am Carlos Hernandez, full stack web developer from Houston, Texas",
-    "subHeader": "I'm currently sharpening my skills and learning lots of new technologies",
-    "reason": "The fist time I saw a in my life and I had the computer lab in the 5th grade. It was the coolest thing ever I pressed a key in the keyboard and it appeared on the monitor",
-    "why": "From the first line of code to last project I worked, I keep learning new things, new technologies, new best pratices and there's always something more to learn, and that's my favorite part about being a programmer!",
+    "header": "I am Carlos Hernandez, full stack web developer from Houston, Texas.",
+    "subHeader": "I'm currently sharpening my skills and learning lots of new technologies.",
+    "reason": "The first time I saw a computer was when I was in the 5th grade. It was the coolest thing ever. I pressed a key in the keyboard and it appeared on the monitor.",
+    "why": "From the first line of code to last project I worked on as well as new technologies to new best pratices; there's always something more for me to learn. That's what I love the most about being a developer!",
     "skills": [
       {
         "name": "HTML5",
