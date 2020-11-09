@@ -40,7 +40,7 @@ export default function AboutMe() {
       <div className="about-me-content-container">
         <div className="about-me-content">
           <h3>About Me</h3>
-          <p>{`${data.header} ${data.subHeader}`}</p>
+          <p>{data.header}</p>
           <h3>What brought me here?</h3>
           <p>{data.reason}</p>
           <h3>Why I enjoy coding?</h3>
