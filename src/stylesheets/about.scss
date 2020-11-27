@@ -1,10 +1,7 @@
-@import "./mixins.scss";
-
 .about-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem 0;
   .about-me-profile-container {
     box-shadow: 0 0 5px 5px #f0f0f0;
     max-width: 500px;

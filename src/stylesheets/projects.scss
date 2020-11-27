@@ -6,6 +6,7 @@
   text-align: center;
   padding-bottom: 2rem;
 }
+
 .project {
   text-align: center;
   width: 100%;
@@ -29,12 +30,13 @@
     justify-content: space-around;
     .link {
       width: 100%;
+      margin: 0 0.5rem;
       cursor: pointer;
       .btn {
         border-radius: 4px;
-        background-color: white;
         width: 100%;
         border: #f0f0f0;
+        height: 40px;
         padding: 1rem 0;
         cursor: pointer;
         &:hover {

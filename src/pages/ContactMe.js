@@ -7,10 +7,9 @@ import {
   validateEmail,
   validateName,
 } from "../utils/validate";
-import styles from "../stylesheets/form.module.scss";
 import { Message } from "semantic-ui-react";
 
-function ContactMe() {
+const ContactMe = () => {
   const [message, setMessage] = useState("");
   function contactMe(msg) {
     client()
@@ -18,7 +17,7 @@ function ContactMe() {
       .then((res) => setMessage(res.data.message));
   }
   return (
-    <div className={styles.contactMe}>
+    <section className="contactMe">
       <h1>How to contact me?</h1>
       <p>
         Email me at 97hernandez.c@gmail.com or fill out the form below. Thanks!
@@ -35,25 +34,25 @@ function ContactMe() {
           actions.resetForm();
         }}>
         {({ errors, touched, validateForm }) => (
-          <Form className={styles.form}>
+          <Form className="form">
             <label>Name</label>
             {errors.name && touched.name && (
-              <div className={styles.validate}>{errors.name}</div>
+              <div className="validate">{errors.name}</div>
             )}
             <Field type="text" name="name" validate={validateName} />
             <label>Email</label>
             {errors.email && touched.email && (
-              <div className={styles.validate}>{errors.email}</div>
+              <div className="validate">{errors.email}</div>
             )}
             <Field type="email" name="email" validate={validateEmail} />
             <label>Subject</label>
             {errors.subject && touched.subject && (
-              <div className={styles.validate}>{errors.subject}</div>
+              <div className="validate">{errors.subject}</div>
             )}
             <Field type="text" name="subject" validate={validateSubject} />
             <label>Message</label>
             {errors.message && touched.message && (
-              <div className={styles.validate}>{errors.message}</div>
+              <div className="validate">{errors.message}</div>
             )}
             <Field
               type="text"
@@ -62,17 +61,14 @@ function ContactMe() {
               validate={validateMessage}
             />
             {message && <Message success content={message} />}
-            <button
-              className={styles.btn}
-              type="submit"
-              onClick={() => validateForm}>
+            <button className="btn" type="submit" onClick={() => validateForm}>
               Submit
             </button>
           </Form>
         )}
       </Formik>
-    </div>
+    </section>
   );
-}
+};
 
 export default ContactMe;

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ch04937 from "../data/ch04937.json";
 import shortid from "shortid";
-import "../stylesheets/pages.scss";
 
-export default function AboutMe() {
+const AboutMe = () => {
   const [profile, setProfile] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
-  const [error, setError] = useState("");
   useEffect(() => {
     fetch("https://api.github.com/users/ch04937")
       .then((res) => res.json())
@@ -17,18 +15,15 @@ export default function AboutMe() {
         },
         (error) => {
           setIsLoaded(true);
-          setError(error);
         }
       );
   }, []);
   const data = ch04937.about;
 
-  return error ? (
-    <div>ERROR: {error.message}</div>
-  ) : !isLoaded ? (
+  return !isLoaded ? (
     <div>Loading ... </div>
   ) : (
-    <div className="about-me">
+    <section className="about-me">
       <div className="about-me-profile-container">
         <img
           src={profile.avatar_url}
@@ -61,6 +56,7 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+export default AboutMe;
