@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "semantic-ui-react";
 
-const Navigation = () => (
+const Footer = () => (
   <footer className="footer">
     <a
       href="https://www.linkedin.com/in/ch04937-carlos-hernandez/"
@@ -17,4 +17,4 @@ const Navigation = () => (
   </footer>
 );
 
-export default Navigation;
+export default Footer;

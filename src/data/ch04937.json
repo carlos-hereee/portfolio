@@ -39,7 +39,6 @@
       "name": "Doctor Website",
       "tech_stack": "Front End - Next.js with Typescript",
       "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
-      "github_url": "https://github.com/VitauMX/vitau-doctors",
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
     {
