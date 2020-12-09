@@ -1,9 +1,6 @@
 .contactMe {
-  box-shadow: 0 0 5px 5px #f0f0f0;
-  max-width: 800px;
+  @include card(800px);
   margin: 1rem auto;
-  border-radius: 10px;
-  padding: 2rem;
 }
 
 .form {
@@ -37,7 +34,7 @@
     border: none;
     border-radius: 4px;
     margin: 5px auto;
-    box-shadow: 0 5px #666;
+    box-shadow: -2px 5px #666;
     &:hover {
       background-color: black;
     }

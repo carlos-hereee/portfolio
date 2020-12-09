@@ -1,3 +1,4 @@
+@import "./variable.scss";
 @import "./mixins.scss";
 @import "./about.scss";
 @import "./projects.scss";
@@ -6,6 +7,9 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background: url("https://images.unsplash.com/photo-1607275667966-5923aacbba8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 .App {
@@ -16,7 +20,7 @@ body {
 }
 
 .nav {
-  background: #313131;
+  background: $header-bg-color;
   color: white;
   padding: 1rem;
 }
