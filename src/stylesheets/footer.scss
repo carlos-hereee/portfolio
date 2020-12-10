@@ -1,8 +1,6 @@
-@import "./mixins.scss";
-
 .footer {
   text-align: center;
-  background-color: #313131;
+  background-color: $header-bg-color;
   color: white;
   width: 100%;
   padding: 1rem 0;

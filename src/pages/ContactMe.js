@@ -1,21 +1,25 @@
 import React, { useState } from "react";
-import { Form, Field, Formik } from "formik";
+import { Form, Field, Formik, ErrorMessage } from "formik";
 import { client } from "../utils/axios";
-import {
-  validateSubject,
-  validateMessage,
-  validateEmail,
-  validateName,
-} from "../utils/validate";
 import { Message } from "semantic-ui-react";
+import * as yup from "yup";
+
+const schema = yup.object({
+  name: yup.string().required("*This field is required"),
+  message: yup.string().required("*This field is required"),
+  email: yup
+    .string()
+    .email("*Must be a valid email")
+    .required("*This field is required"),
+});
 
 const ContactMe = () => {
-  const [message, setMessage] = useState("");
-  function contactMe(msg) {
+  const [message, setMessage] = useState(null);
+  const contactMe = (msg) => {
     client()
-      .post("/mail", msg)
-      .then((res) => setMessage(res.data.message));
-  }
+      .post("/api/email", msg)
+      .then((res) => setMessage(res.data.success));
+  };
   return (
     <section className="contactMe">
       <h1>How to contact me?</h1>
@@ -26,46 +30,39 @@ const ContactMe = () => {
         initialValues={{
           name: "",
           email: "",
-          subject: "",
           message: "",
         }}
         onSubmit={(values, actions) => {
           contactMe(values);
           actions.resetForm();
-        }}>
-        {({ errors, touched, validateForm }) => (
-          <Form className="form">
+        }}
+        validationSchema={schema}>
+        <Form className="form">
+          <div className="label">
             <label>Name</label>
-            {errors.name && touched.name && (
-              <div className="validate">{errors.name}</div>
-            )}
-            <Field type="text" name="name" validate={validateName} />
+            <ErrorMessage name="name" component="div" className="validate" />
+          </div>
+          <Field type="text" name="name" />
+          <div className="label">
             <label>Email</label>
-            {errors.email && touched.email && (
-              <div className="validate">{errors.email}</div>
-            )}
-            <Field type="email" name="email" validate={validateEmail} />
-            <label>Subject</label>
-            {errors.subject && touched.subject && (
-              <div className="validate">{errors.subject}</div>
-            )}
-            <Field type="text" name="subject" validate={validateSubject} />
+            <ErrorMessage name="email" component="div" className="validate" />
+          </div>
+          <Field type="email" name="email" />
+          <div className="label">
             <label>Message</label>
-            {errors.message && touched.message && (
-              <div className="validate">{errors.message}</div>
-            )}
-            <Field
-              type="text"
-              name="message"
-              component="textarea"
-              validate={validateMessage}
-            />
-            {message && <Message success content={message} />}
-            <button className="btn" type="submit" onClick={() => validateForm}>
-              Submit
-            </button>
-          </Form>
-        )}
+            <ErrorMessage name="message" component="div" className="validate" />
+          </div>
+          <Field
+            type="text"
+            name="message"
+            component="textarea"
+            className="textarea"
+          />
+          {message && <Message success content={message} />}
+          <button className="btn" type="submit">
+            Submit
+          </button>
+        </Form>
       </Formik>
     </section>
   );

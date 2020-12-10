@@ -21,11 +21,13 @@ const Projects = () => {
                     View Site
                   </button>
                 </a>
-                <a href={item.github_url} className="link">
-                  <button type="button" className="btn">
-                    <Icon name="github" size="large" />
-                  </button>
-                </a>
+                {item.github_url && (
+                  <a href={item.github_url} className="link">
+                    <button type="button" className="btn">
+                      <Icon name="github" size="large" />
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
           ))}
