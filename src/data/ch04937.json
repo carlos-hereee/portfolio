@@ -38,7 +38,7 @@
     {
       "name": "Doctor Website",
       "tech_stack": "Front End - Next.js with Typescript",
-      "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
+      "description": "Helps doctors and patients communicate with each other via a web platform. Through the platform, users can schedule real world visits for simple check ups or last minute care without the hassle of long call times.",
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
     {
@@ -58,7 +58,7 @@
     {
       "name": "School Calendar",
       "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
-      "description": "Help School teacher and coaches coordinate with their students",
+      "description": "Teachers and students can now communicate with each other via web platform. Through the platform, teachers can schedule real world events where students can attend",
       "github_url": "https://github.com/mesofunny/front-end",
       "project_url": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
     }
