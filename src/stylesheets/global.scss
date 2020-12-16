@@ -1,0 +1,22 @@
+.button {
+  border-radius: 4px;
+  width: 100%;
+  border: #f0f0f0;
+  height: 40px;
+  background-color: #19202a;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(63, 62, 62);
+  }
+}
+.button--primary {
+  margin-top: 1rem;
+}
+
+.validate {
+  color: white;
+  padding: 0.2rem;
+  border-radius: 6px;
+  background-color: rgb(250, 67, 67);
+}

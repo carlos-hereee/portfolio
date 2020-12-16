@@ -1,41 +1,36 @@
-.title {
-  text-align: center;
-}
-
 .project {
-  text-align: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   @media #{$mobile} {
     max-width: 400px;
     margin: auto;
   }
-  .card {
-    @include card(400px);
+  .project__header {
+    @include card(300px);
+    margin: auto;
+    text-align: center;
+    padding: 1rem 3rem;
+  }
+  .project__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
     margin: 1rem;
   }
-  .actions {
+}
+
+.card {
+  @include card(400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .card__button {
     display: flex;
-    justify-content: space-around;
-    .link {
-      width: 100%;
-      margin: 0 0.5rem;
-      cursor: pointer;
-      .btn {
-        border-radius: 4px;
-        width: 100%;
-        border: #f0f0f0;
-        height: 40px;
-        padding: 1rem 0;
-        cursor: pointer;
-        &:hover {
-          padding: 1rem 0;
-          background-color: rgb(189, 189, 189);
-        }
-      }
-    }
+    margin-top: 1rem;
+  }
+  .card__link {
+    width: 100%;
+    margin: 0 0.5rem;
+    cursor: pointer;
   }
 }

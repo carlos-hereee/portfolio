@@ -21,7 +21,7 @@ const ContactMe = () => {
       .then((res) => setMessage(res.data.success));
   };
   return (
-    <section className="contactMe">
+    <section className="contact-me">
       <h1>How to contact me?</h1>
       <p>
         Email me at 97hernandez.c@gmail.com or fill out the form below. Thanks!
@@ -37,18 +37,18 @@ const ContactMe = () => {
           actions.resetForm();
         }}
         validationSchema={schema}>
-        <Form className="form">
-          <div className="label">
+        <Form className="contact-me__form">
+          <div className="contact-me__label">
             <label>Name</label>
             <ErrorMessage name="name" component="div" className="validate" />
           </div>
           <Field type="text" name="name" />
-          <div className="label">
+          <div className="contact-me__label">
             <label>Email</label>
             <ErrorMessage name="email" component="div" className="validate" />
           </div>
           <Field type="email" name="email" />
-          <div className="label">
+          <div className="contact-me__label">
             <label>Message</label>
             <ErrorMessage name="message" component="div" className="validate" />
           </div>
@@ -59,7 +59,7 @@ const ContactMe = () => {
             className="textarea"
           />
           {message && <Message success content={message} />}
-          <button className="btn" type="submit">
+          <button className="button button--primary" type="submit">
             Submit
           </button>
         </Form>

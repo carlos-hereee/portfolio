@@ -1,36 +1,36 @@
 .about-me {
   @include flex(space-around, row);
   flex-wrap: wrap;
-  .about-me-profile-container {
+  .about-me__profile {
     @include card(520px);
     margin: 1rem;
-    .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .profile__photo {
       border-radius: 10px;
+
       @media #{$mobile} {
         width: 16rem;
       }
     }
   }
-  .about-me-content-container {
+  .about-me__content {
     @include card(520px);
     margin: 1rem;
-    .about-me-content {
-      display: flex;
-      flex-direction: column;
-      @media #{$mobile} {
-        padding: 0 1rem;
-      }
-      .skills {
-        @include flex(space-around, row);
-        flex-wrap: wrap;
-        .skill {
-          display: flex;
-          padding: 0 0.5rem;
-          .icon {
-            margin: 0 0.5rem;
-            width: 1.4rem;
-            height: 1.4rem;
-          }
+    @media #{$mobile} {
+      padding: 0 1rem;
+    }
+    .about-me__skills {
+      @include flex(space-around, row);
+      flex-wrap: wrap;
+      .skill {
+        display: flex;
+        padding: 0 0.5rem;
+        .skill__icon {
+          margin: 0 0.5rem;
+          width: 1.4rem;
+          height: 1.4rem;
         }
       }
     }
