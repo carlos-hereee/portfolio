@@ -1,53 +1,35 @@
-.title {
-  @include card(300px);
-  margin: auto;
-  text-align: center;
-  animation: sway1 10s infinite;
-  transform-origin: 50% 100% 0;
-}
-
 .project {
-  text-align: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   @media #{$mobile} {
     max-width: 400px;
     margin: auto;
   }
-  .card {
-    @include card(400px);
+  .project__header {
+    @include card(300px);
+    margin: auto;
+    padding: 1rem 3rem;
+  }
+  .project__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
     margin: 1rem;
   }
-  .actions {
-    display: flex;
-    justify-content: space-around;
-    .link {
-      width: 100%;
-      margin: 0 0.5rem;
-      cursor: pointer;
-      .btn {
-        border-radius: 4px;
-        width: 100%;
-        border: #f0f0f0;
-        height: 40px;
-        cursor: pointer;
-        &:hover {
-          background-color: rgb(189, 189, 189);
-        }
-      }
-    }
-  }
 }
 
-@keyframes sway1 {
-  0%,
-  100% {
-    transform: translateY(-5px);
+.card {
+  @include card(400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .card__button {
+    display: flex;
+    margin-top: 1rem;
   }
-  50% {
-    transform: translateY(5px);
+  .card__link {
+    width: 100%;
+    margin: 0 0.5rem;
+    cursor: pointer;
   }
 }
