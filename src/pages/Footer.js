@@ -10,13 +10,13 @@ const Footer = () => (
       <div>
         <a
           href="https://www.linkedin.com/in/ch04937-carlos-hernandez/"
-          className="footer-link">
+          className="footer__link">
           <Icon name="linkedin" size="big" />
         </a>
-        <a href="https://www.github.com/ch04937" className="footer-link">
+        <a href="https://www.github.com/ch04937" className="footer__link">
           <Icon name="github" size="big" />
         </a>
-        <a href="https://twitter.com/ch04937" className="footer-link">
+        <a href="https://twitter.com/ch04937" className="footer__link">
           <Icon name="twitter" size="big" />
         </a>
       </div>

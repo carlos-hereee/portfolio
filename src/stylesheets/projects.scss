@@ -7,6 +7,7 @@
   .project__header {
     @include card(300px);
     margin: auto;
+    text-align: center;
     padding: 1rem 3rem;
   }
   .project__cards {
