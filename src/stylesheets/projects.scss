@@ -1,5 +1,9 @@
 .title {
+  @include card(300px);
+  margin: auto;
   text-align: center;
+  animation: sway1 10s infinite;
+  transform-origin: 50% 100% 0;
 }
 
 .project {
@@ -29,13 +33,21 @@
         width: 100%;
         border: #f0f0f0;
         height: 40px;
-        padding: 1rem 0;
         cursor: pointer;
         &:hover {
-          padding: 1rem 0;
           background-color: rgb(189, 189, 189);
         }
       }
     }
+  }
+}
+
+@keyframes sway1 {
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
   }
 }

@@ -6,7 +6,7 @@
 @import "./footer.scss";
 @import "./animation.scss";
 
-.App {
+.app {
   font-family: "Lato", sans-serif;
   background: $img no-repeat center center fixed;
   background-size: cover;
@@ -14,7 +14,7 @@
   font-size: 16px;
 }
 
-.nav {
+.header__title {
   background: $header-bg-color;
   color: white;
   padding: 1rem;

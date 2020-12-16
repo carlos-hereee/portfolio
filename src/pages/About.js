@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ch04937 from "../data/ch04937.json";
 import shortid from "shortid";
+import Skill from "../components/Skill";
+import ch04937 from "../data/ch04937.json";
 
 const AboutMe = () => {
   const [profile, setProfile] = useState({});
@@ -18,42 +19,31 @@ const AboutMe = () => {
         }
       );
   }, []);
-  const data = ch04937.about;
-
   return !isLoaded ? (
     <div>Loading ... </div>
   ) : (
     <section className="about-me">
-      <div className="about-me-profile-container">
+      <div className="about-me__profile">
         <img
           src={profile.avatar_url}
           alt="Carlos Hernandez profile"
-          className="profile"
+          className="profile__photo"
         />
         <p>{profile.bio}</p>
       </div>
-      <div className="about-me-content-container">
-        <div className="about-me-content">
-          <h3>About Me</h3>
-          <p>{data.header}</p>
-          <h3>What brought me here?</h3>
-          <p>{data.reason}</p>
-          <h3>Why I enjoy coding?</h3>
-          <p>{data.why}</p>
-          <h3>MY TECH SKILLS</h3>
-          <div className="skills">
-            {data &&
-              data.skills.map((item) => (
-                <div className="skill">
-                  <p key={shortid.generate()}>{item.name} </p>
-                  <img
-                    src={item.src}
-                    alt={`icon of ${item.name}`}
-                    className="icon"
-                  />
-                </div>
-              ))}
-          </div>
+      <div className="about-me__content">
+        <h3>About Me</h3>
+        <p>{ch04937.about.header}</p>
+        <h3>What brought me here?</h3>
+        <p>{ch04937.about.reason}</p>
+        <h3>Why I enjoy coding?</h3>
+        <p>{ch04937.about.why}</p>
+        <h3>MY TECH SKILLS</h3>
+        <div className="about-me__skills">
+          {ch04937.about.skills &&
+            ch04937.about.skills.map((item) => (
+              <Skill key={shortid.generate()} skill={item} />
+            ))}
         </div>
       </div>
     </section>
