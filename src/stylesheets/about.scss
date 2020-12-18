@@ -1,19 +1,22 @@
 .about-me {
-  @include card(1000px);
+  @include card(1100px);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 1rem auto;
   .about-me__profile {
     margin: auto 0;
-    max-width: 400px;
+    max-width: 350px;
     .profile__photo {
-      max-width: 400px;
+      max-width: 350px;
       border-radius: 10px;
+      @media #{$mobile} {
+        width: 90%;
+      }
     }
   }
   .about-me__content {
-    max-width: 400px;
+    max-width: 350px;
   }
   .about-me__skills {
     margin: 2rem auto 0 auto;

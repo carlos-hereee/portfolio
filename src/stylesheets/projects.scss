@@ -16,13 +16,13 @@
     justify-content: space-around;
     text-align: left;
     margin: 1rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
   }
 }
 
 .card {
-  @include card(310px);
+  @include card(370px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
