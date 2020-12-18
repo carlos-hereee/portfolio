@@ -36,9 +36,16 @@
   },
   "projects": [
     {
+      "name": "Show Finder",
+      "tech_stack": "Front End - React.js, Typescript and Scss",
+      "description": "Source through any movie or show in mind and learn more about your favorite series",
+      "project_url": "https://tv-maze.vercel.app/",
+      "github_url": "https://github.com/ch04937/show-finder"
+    },
+    {
       "name": "Doctor Website",
       "tech_stack": "Front End - Next.js with Typescript",
-      "description": "Helps doctors and patient schedule visits and patient look view the doctors history",
+      "description": "Doctors and patients can communicate with each other via a web platform. Through the platform, users can schedule real world visits for simple check ups or last minute care without the hassle of long call times",
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
     {
@@ -58,7 +65,7 @@
     {
       "name": "School Calendar",
       "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
-      "description": "Help School teacher and coaches coordinate with their students",
+      "description": "School teacher and coaches can schedule real world events to school events so that everyone is always updated when changes occur.",
       "github_url": "https://github.com/mesofunny/front-end",
       "project_url": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
     }
