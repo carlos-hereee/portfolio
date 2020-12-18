@@ -3,7 +3,7 @@
 @import "./about.scss";
 @import "./projects.scss";
 @import "./contact.scss";
-@import "./footer.scss";
+@import "./header_footer.scss";
 @import "./animation.scss";
 @import "./global.scss";
 
@@ -13,10 +13,4 @@
   background-size: cover;
   color: white;
   font-size: 16px;
-}
-
-.header__title {
-  background: $header-bg-color;
-  color: white;
-  padding: 1rem;
 }

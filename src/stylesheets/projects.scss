@@ -16,14 +16,17 @@
     justify-content: space-around;
     text-align: left;
     margin: 1rem;
+    max-width: 1200px;
+    margin: auto;
   }
 }
 
 .card {
-  @include card(400px);
+  @include card(370px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0.5rem;
   .card__button {
     display: flex;
     margin-top: 1rem;

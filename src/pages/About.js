@@ -38,8 +38,10 @@ const AboutMe = () => {
         <p>{ch04937.about.reason}</p>
         <h3>Why I enjoy coding?</h3>
         <p>{ch04937.about.why}</p>
-        <h3>MY TECH SKILLS</h3>
-        <div className="about-me__skills">
+      </div>
+      <div className="about-me__skills">
+        <h3 className="skills__title">MY TECH SKILLS</h3>
+        <div className="skills__content">
           {ch04937.about.skills &&
             ch04937.about.skills.map((item) => (
               <Skill key={shortid.generate()} skill={item} />

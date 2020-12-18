@@ -59,9 +59,11 @@ const ContactMe = () => {
             className="textarea"
           />
           {message && <Message success content={message} />}
-          <button className="button button--primary" type="submit">
-            Submit
-          </button>
+          <div className="contact-me__button">
+            <button className="button button--primary" type="submit">
+              Submit
+            </button>
+          </div>
         </Form>
       </Formik>
     </section>
