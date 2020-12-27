@@ -3,9 +3,16 @@
   justify-content: space-around;
   align-items: center;
   background: $header-bg-color;
-  padding: 1rem;
-  .header__title {
-    color: white;
+  .header__svg {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    .header__title {
+      color: white;
+      margin: 0 1rem;
+    }
   }
 }
 .footer {
@@ -16,6 +23,12 @@
   color: white;
   width: 100%;
   padding: 1rem 0;
+  .footer__copyright {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 .social__link {
   color: white;
