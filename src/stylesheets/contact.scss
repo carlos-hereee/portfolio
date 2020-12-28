@@ -27,4 +27,15 @@
     border-radius: 4px;
     padding: 1rem;
   }
+  .success {
+    background-color: #dff2bf;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .success__message {
+      color: #4f8a10;
+    }
+  }
 }
