@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Form, Field, Formik, ErrorMessage } from "formik";
 import { client } from "../utils/axios";
-import { Message } from "semantic-ui-react";
 import * as yup from "yup";
+import { Icon } from "semantic-ui-react";
 
 const schema = yup.object({
   name: yup.string().required("*This field is required"),
@@ -14,11 +14,12 @@ const schema = yup.object({
 });
 
 const ContactMe = () => {
-  const [message, setMessage] = useState(null);
+  const [status, setStatus] = useState(true);
   const contactMe = (msg) => {
     client()
       .post("/api/email", msg)
-      .then((res) => setMessage(res.data.success));
+      .then((res) => setStatus(res.data.status))
+      .catch(() => setStatus(false));
   };
   return (
     <section className="contact-me">
@@ -58,7 +59,14 @@ const ContactMe = () => {
             component="textarea"
             className="textarea"
           />
-          {message && <Message success content={message} />}
+          {status && (
+            <div className="success">
+              <Icon name="check circle" color="green" />
+              <p className="success__message">
+                Email has been sent. Will be in touch soon!
+              </p>
+            </div>
+          )}
           <div className="contact-me__button">
             <button className="button button--primary" type="submit">
               Submit
