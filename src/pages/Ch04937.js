@@ -14,8 +14,8 @@ const Ch04937 = () => (
         height="10000%">
         <feFlood
           result="flood"
-          flood-color="rgb(229,255,236)"
-          flood-opacity=".8"></feFlood>
+          floodColor="rgb(229,255,236)"
+          floodOpacity=".8"></feFlood>
         <feComposite
           in="flood"
           result="mask"
@@ -34,7 +34,7 @@ const Ch04937 = () => (
           <feMergeNode in="blurred"></feMergeNode>
           <feMergeNode in="SourceGraphic"></feMergeNode>
         </feMerge>
-      </filter>{" "}
+      </filter>
       <filter
         id="blue-glow"
         x="-5000%"
@@ -43,8 +43,8 @@ const Ch04937 = () => (
         height="10000%">
         <feFlood
           result="flood"
-          flood-color="rgb(106,255,246)"
-          flood-opacity=".8"></feFlood>
+          floodColor="rgb(106,255,246)"
+          floodOpacity=".8"></feFlood>
         <feComposite
           in="flood"
           result="mask"
