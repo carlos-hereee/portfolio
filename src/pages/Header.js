@@ -1,10 +1,10 @@
 import Social from "../components/Social";
-import Ch04937 from "./Ch04937";
+import ch04937 from "../assets/ch04937.svg";
 
 const Header = () => (
   <header className="header">
     <div className="header__svg">
-      <Ch04937 />
+      <img src={ch04937} alt="ch04937 logo" />
       <h1 className="header__title">Carlos Hernandez</h1>
     </div>
     <Social />
