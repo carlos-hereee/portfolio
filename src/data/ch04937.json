@@ -36,13 +36,6 @@
   },
   "projects": [
     {
-      "name": "Show Finder",
-      "tech_stack": "Front End - React.js, Typescript and Scss",
-      "description": "Source through any movie or show in mind and learn more about your favorite series",
-      "project_url": "https://tv-maze.vercel.app/",
-      "github_url": "https://github.com/ch04937/show-finder"
-    },
-    {
       "name": "Doctor Website",
       "tech_stack": "Front End - Next.js with Typescript",
       "description": "Doctors and patients can communicate with each other via a web platform. Through the platform, users can schedule real world visits for simple check ups or last minute care without the hassle of long call times",
