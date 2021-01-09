@@ -1,7 +1,7 @@
 import { Icon } from "semantic-ui-react";
 
 const Social = () => (
-  <>
+  <div>
     <a
       href="https://www.linkedin.com/in/ch04937-carlos-hernandez/"
       className="social__link">
@@ -13,6 +13,6 @@ const Social = () => (
     <a href="https://twitter.com/ch04937" className="social__link">
       <Icon name="twitter" size="big" />
     </a>
-  </>
+  </div>
 );
 export default Social;
