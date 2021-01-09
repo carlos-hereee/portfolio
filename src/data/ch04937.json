@@ -50,13 +50,6 @@
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
     {
-      "name": "Ark Planner",
-      "tech_stack": "Front End - React.js",
-      "description": "A planner for a competitive gamer community to help the organizers coordinate with everyone about current game events to maximize participation.",
-      "github_url": "https://github.com/ch04937/arc-planner",
-      "project_url": "https://arc-planner-avuww7k5o.vercel.app/"
-    },
-    {
       "name": "Vaccine Tracker",
       "tech_stack": "Front End - React.js",
       "description": "A Vaccine/Treatment RnD tracker for easily getting the latest SARS-CoV2/COVID-19 research and clinical trials happening all over the world.",
