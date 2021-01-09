@@ -48,7 +48,6 @@
       "description": "Doctors and patients can communicate with each other via a web platform. Through the platform, users can schedule real world visits for simple check ups or last minute care without the hassle of long call times",
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
-
     {
       "name": "Vaccine Tracker",
       "tech_stack": "Front End - React.js",
