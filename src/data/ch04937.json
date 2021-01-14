@@ -50,17 +50,10 @@
       "project_url": "https://vitau-doctors-moktpbd9j.vercel.app/doctor"
     },
     {
-      "name": "Vaccine Tracker",
-      "tech_stack": "Front End - React.js",
-      "description": "A Vaccine/Treatment RnD tracker for easily getting the latest SARS-CoV2/COVID-19 research and clinical trials happening all over the world.",
-      "github_url": "https://github.com/ncov19-us/ncov19-vacc-dash-front-end",
-      "project_url": "https://vaccine.ncov19.us/"
-    },
-    {
       "name": "School Calendar",
       "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
       "description": "School teacher and coaches can schedule real world events to school events so that everyone is always updated when changes occur.",
-      "github_url": "https://github.com/mesofunny/front-end",
+      "github_url": "https://github.com/Lambda-School-Labs/school-calendar-fe",
       "project_url": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
     }
   ]
