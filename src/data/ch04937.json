@@ -39,8 +39,9 @@
       "name": "MiniGames",
       "tech_stack": "Front End - React.js, Bootstrap, Scss",
       "description": "An arcade of games where the user share their status and can play minigames with friends",
-      "project_url": "https://minigames-kappa.vercel.app/",
-      "github_url": "https://github.com/ch04937/minigames"
+      "project_url": "https://take-five.vercel.app/",
+      "github_url": "https://github.com/ch04937/take-five",
+      "documentation": "https://utopian-bit-fdc.notion.site/Take-Five-717cf4058b2146b7a85d807b08c2b2e6"
     },
     {
       "name": "Show Finder",

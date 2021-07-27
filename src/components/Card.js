@@ -20,6 +20,13 @@ const Card = ({ card }) => (
           </button>
         </a>
       )}
+      {card.documentation && (
+        <a href={card.documentation} className="card__link">
+          <button type="button" className="button">
+            Docs
+          </button>
+        </a>
+      )}
     </div>
   </div>
 );
