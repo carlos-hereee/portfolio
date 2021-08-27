@@ -5,7 +5,7 @@
     margin: auto;
   }
   .project__header {
-    @include card(300px);
+    // @include card(300px);
     margin: auto;
     text-align: center;
     padding: 1rem 3rem;
@@ -22,7 +22,7 @@
 }
 
 .card {
-  @include card(370px);
+  // @include card(370px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
