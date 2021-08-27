@@ -1,11 +1,11 @@
 import React from "react";
+import Logo from "../components/Logo";
 import Social from "../components/Social";
-import ch04937 from "../assets/ch04937.svg";
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer__copyright">
-      <img src={ch04937} alt="ch04937 logo" />
+      <Logo className="footer-logo" />
       <p>Copyright © 2020</p>
     </div>
     <Social />
