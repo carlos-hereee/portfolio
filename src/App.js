@@ -7,10 +7,12 @@ import Introduction from "./pages/Introduction";
 
 const App = () => (
   <div className="app">
-    <Introduction />
-    {/* <AboutMe /> */}
-    {/* <Projects />
+    <div className="theme">
+      <Introduction />
+      <AboutMe />
+      {/* <Projects />
     <ContactMe /> */}
+    </div>
     <Footer />
   </div>
 );

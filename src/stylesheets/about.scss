@@ -1,37 +1,35 @@
+.about-me__profile {
+  margin: auto 0;
+  max-width: 350px;
+}
 .about-me {
-  // @include card(1000px);
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 1rem auto;
-  .about-me__profile {
-    margin: auto 0;
-    max-width: 350px;
-    .profile__photo {
-      max-width: 350px;
-      border-radius: 10px;
-      @media #{$mobile} {
-        width: 90%;
-      }
-    }
+  gap: 2rem;
+}
+.profile__photo {
+  max-width: 350px;
+  border-radius: 50%;
+  @media #{$mobile} {
+    width: 90%;
   }
-  .about-me__content {
-    max-width: 350px;
-  }
-  .about-me__skills {
-    margin: 2rem auto 0 auto;
+}
+.about-me__content {
+  max-width: 350px;
+}
+.about-me__skills {
+  margin: 2rem auto 0 auto;
+  width: 100%;
+  .skills__title {
     width: 100%;
-    .skills__title {
-      width: 100%;
-      text-align: center;
-    }
-    .skills__content {
-      width: 100%;
-      padding: 0 0.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+    text-align: center;
+  }
+  .skills__content {
+    width: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
