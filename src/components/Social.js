@@ -1,17 +1,22 @@
-import { Icon } from "semantic-ui-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Social = () => (
-  <div>
+  <div className="social">
     <a
       href="https://www.linkedin.com/in/ch04937-carlos-hernandez/"
-      className="social__link">
-      <Icon name="linkedin" size="big" />
+      className="social-link">
+      <FontAwesomeIcon icon={faLinkedin} size="3x" />
     </a>
-    <a href="https://www.github.com/ch04937" className="social__link">
-      <Icon name="github" size="big" />
+    <a href="https://www.github.com/ch04937" className="social-link">
+      <FontAwesomeIcon icon={faGithub} size="3x" />
     </a>
-    <a href="https://twitter.com/ch04937" className="social__link">
-      <Icon name="twitter" size="big" />
+    <a href="https://twitter.com/ch04937" className="social-link">
+      <FontAwesomeIcon icon={faTwitter} size="3x" />
     </a>
   </div>
 );

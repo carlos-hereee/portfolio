@@ -29,7 +29,12 @@
     justify-content: space-around;
   }
 }
-.social__link {
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-link {
+  margin: 1rem;
   color: white;
   &:hover {
     color: white;
