@@ -4,11 +4,9 @@ import Header from "./pages/Header";
 import Projects from "./pages/Project";
 import Footer from "./pages/Footer";
 import AboutMe from "./pages/About";
-import Particle from "./components/Particle";
 
 const App = () => (
   <div className="app">
-    <Particle />
     <Header />
     <AboutMe />
     <Projects />

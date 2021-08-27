@@ -3,3 +3,21 @@ $header-bg-color: rgb(25, 32, 42);
 $card-bg-color: rgb(31, 36, 45);
 $img: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg");
 $screen: rgb(0, 255, 255);
+
+@mixin flex($content, $direction) {
+  display: flex;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+@mixin card($w1) {
+  background: rgba(255, 255, 255, 0.2);
+  max-width: $w1;
+  border-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+// mobile media query
+$mobile: "only screen and (max-width: 500px)";

@@ -36,7 +36,7 @@
   },
   "projects": [
     {
-      "name": "MiniGames",
+      "name": "Take Five",
       "tech_stack": "Front End - React.js, Bootstrap, Scss",
       "description": "An arcade of games where the user share their status and can play minigames with friends",
       "project_url": "https://take-five.vercel.app/",
