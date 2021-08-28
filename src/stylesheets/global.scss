@@ -31,11 +31,11 @@
   height: 200px;
   margin: 1rem;
 }
-// .card-glass-small {
-//   background: rgba(255, 255, 255, 0.2);
-//   border-radius: 10px;
-//   padding: 1rem;
-//   backdrop-filter: blur(3px);
-//   border: solid 2px transparent;
-//   background-clip: padding-box;
-// }
+.card-glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}

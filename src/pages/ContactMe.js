@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Form, Field, Formik, ErrorMessage } from "formik";
 import { client } from "../utils/axios";
 import * as yup from "yup";
-import { Icon } from "semantic-ui-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 
 const schema = yup.object({
   name: yup.string().required("*This field is required"),
@@ -61,7 +62,7 @@ const ContactMe = () => {
           />
           {status && (
             <div className="success">
-              <Icon name="check circle" color="green" />
+              <FontAwesomeIcon icon={faCheckCircle} color="green" />
               <p className="success__message">
                 Email has been sent. Will be in touch soon!
               </p>

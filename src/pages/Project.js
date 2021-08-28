@@ -4,9 +4,9 @@ import data from "../data/ch04937.json";
 import shortid from "shortid";
 
 const Projects = () => (
-  <section className="project">
-    <h1 className="project__header">Projects</h1>
-    <div className="project__cards">
+  <section>
+    <h1 className="text-center">Projects</h1>
+    <div className="project-cards">
       {data.projects &&
         data.projects.map((item) => (
           <Card key={shortid.generate()} card={item} />

@@ -1,28 +1,11 @@
-.project {
-  width: 100%;
-  @media #{$mobile} {
-    max-width: 400px;
-    margin: auto;
-  }
-  .project__header {
-    // @include card(300px);
-    margin: auto;
-    text-align: center;
-    padding: 1rem 3rem;
-  }
-  .project__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: left;
-    margin: 1rem;
-    max-width: 1200px;
-    margin: auto;
-  }
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
 }
 
 .card {
-  // @include card(370px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
