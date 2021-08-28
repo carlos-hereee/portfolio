@@ -8,8 +8,8 @@ import Introduction from "./pages/Introduction";
 const App = () => (
   <div className="app">
     <div className="theme">
-      <Introduction />
-      <AboutMe />
+      {/* <Introduction />
+      <AboutMe /> */}
       <Projects />
       {/* <ContactMe /> */}
     </div>

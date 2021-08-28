@@ -4,30 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Card = ({ card }) => (
   <div className="card-glass-small">
     <div>
-      <h3>{card.name}</h3>
-      <h5>{card.tech_stack}</h5>
-      <p>{card.description}</p>
+      <h3 className="card-title">{card.name}</h3>
+      <h5 className="card-subtitle">{card.tech_stack}</h5>
+      <p className="card-text">{card.description}</p>
     </div>
-    <div className="">
-      <a href={card.project_url} className="card__link">
-        <button type="button" className="button">
-          View Site
-        </button>
-      </a>
-      {card.github_url && (
-        <a href={card.github_url} className="card__link">
-          <button type="button" className="button">
-            <FontAwesomeIcon icon={faGithub} size="3x" />
-          </button>
+    <div className="card-footer d-flex flex-wrap justify-content-around">
+      {card.buttons.map((item) => (
+        <a href={item.link} className="m-1">
+          <button className="btn btn-secondary">{item.name}</button>
         </a>
-      )}
-      {card.documentation && (
-        <a href={card.documentation} className="card__link">
-          <button type="button" className="button">
-            Docs
-          </button>
-        </a>
-      )}
+      ))}
     </div>
   </div>
 );

@@ -6,7 +6,7 @@ import shortid from "shortid";
 const Projects = () => (
   <section>
     <h1 className="text-center">Projects</h1>
-    <div className="project-cards">
+    <div className="d-flex flex-wrap justify-content-around text-left">
       {data.projects &&
         data.projects.map((item) => (
           <Card key={shortid.generate()} card={item} />
