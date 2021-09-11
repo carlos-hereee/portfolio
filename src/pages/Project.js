@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../components/Card";
-import data from "../data/ch04937.json";
+import data from "../ch04937.json";
 import shortid from "shortid";
 
 const Projects = () => (
-  <section>
+  <section className="container card-glass mb-4">
     <h1 className="text-center">Projects</h1>
     <div className="d-flex flex-wrap justify-content-around text-left">
       {data.projects &&

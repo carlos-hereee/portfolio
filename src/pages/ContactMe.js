@@ -23,8 +23,8 @@ const ContactMe = () => {
       .catch(() => setStatus(false));
   };
   return (
-    <section className="contact-me">
-      <h1>How to contact me?</h1>
+    <section className="container card-glass mb-4">
+      <h1 className="text-center">How to contact me?</h1>
       <p>
         Email me at 97hernandez.c@gmail.com or fill out the form below. Thanks!
       </p>
@@ -68,8 +68,8 @@ const ContactMe = () => {
               </p>
             </div>
           )}
-          <div className="contact-me__button">
-            <button className="button button--primary" type="submit">
+          <div className="text-center p-2">
+            <button className="btn btn-secondary" type="submit">
               Submit
             </button>
           </div>

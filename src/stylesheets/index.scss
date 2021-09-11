@@ -3,7 +3,6 @@
 @import "./contact.scss";
 @import "./footer.scss";
 @import "./global.scss";
-@import "./introduction.scss";
 
 .app {
   font-family: "Lato", sans-serif;
@@ -16,4 +15,17 @@
 .theme {
   max-width: 1200px;
   margin: auto;
+}
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.card-sm {
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
