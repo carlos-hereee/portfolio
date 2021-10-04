@@ -1,5 +1,3 @@
-import Logo from "../components/Logo";
-
 const Introduction = () => {
   return (
     <section className="container introduction">
@@ -8,7 +6,6 @@ const Introduction = () => {
         <h1>I'm a</h1>
         <h1>Front End Web Developer</h1>
       </div>
-      <Logo size="large" />
     </section>
   );
 };

@@ -1,6 +1,4 @@
-import logo from "../assets/silent-coding.svg";
+import logo from "../assets/logo.svg";
 
-const Logo = ({ size }) => (
-  <img src={logo} alt="carlos-hernandez" className={`logo-${size}`} />
-);
+const Logo = () => <img src={logo} alt="carlos-hernandez" className="logo" />;
 export default Logo;

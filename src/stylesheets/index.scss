@@ -4,28 +4,48 @@
 @import "./footer.scss";
 @import "./global.scss";
 
+#root {
+  background-color: #0c2d48;
+}
 .app {
   font-family: "Lato", sans-serif;
-  height: 100vh;
-  background-image: url("../assets/background.svg");
-  background-size: cover;
-  overflow-y: scroll;
+  background-color: #0c2d48;
   color: white;
-}
-.theme {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
   max-width: 1200px;
   margin: auto;
 }
+
+.header {
+  background-color: #05131f;
+  flex-direction: column;
+  width: 300px;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+}
+.body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.logo {
+  width: 80%;
+}
 .introduction {
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+}
+.projects {
+  min-height: 100vh;
 }
 .card-sm {
-  max-width: 25rem;
+  max-width: 300px;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
 }

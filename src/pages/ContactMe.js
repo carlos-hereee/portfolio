@@ -23,11 +23,17 @@ const ContactMe = () => {
       .catch(() => setStatus(false));
   };
   return (
-    <section className="container card-glass mb-4">
-      <h1 className="text-center">How to contact me?</h1>
-      <p>
-        Email me at 97hernandez.c@gmail.com or fill out the form below. Thanks!
-      </p>
+    <section className="container contact-me mb-4" id="contact-me">
+      <div>
+        <h1 className="text-center nav-link-active">Lets get in touch!</h1>
+        <p className="text-center">
+          Email me at 97hernandez.c@gmail.com or fill out the form below.
+          Thanks!
+        </p>
+        <p className="text-center">
+          "Alone we can do so little together we can do so much." – Helen Keller
+        </p>
+      </div>
       <Formik
         initialValues={{
           name: "",
@@ -69,7 +75,7 @@ const ContactMe = () => {
             </div>
           )}
           <div className="text-center p-2">
-            <button className="btn btn-secondary" type="submit">
+            <button className="btn button-submit" type="submit">
               Submit
             </button>
           </div>

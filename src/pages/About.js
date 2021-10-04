@@ -23,30 +23,27 @@ const AboutMe = () => {
   return !isLoaded ? (
     <div>Loading ... </div>
   ) : (
-    <section className="container mb-4">
+    <section className="container mb-4 about-me" id="about">
       <div className="text-center">
-        <div className="card-glass">
-          <h3 className="text-center">Who am I?</h3>
-          <img
-            src={profile.avatar_url}
-            alt="Carlos Hernandez"
-            className="profile__photo m-4"
-          />
-          <p className="text-center mt-1">{profile.bio}</p>
-          <h3>About Me</h3>
-          <div className="text-left">
-            <p>{ch04937.about.header}</p>
-            <p>{ch04937.about.why}</p>
-            <Social />
-          </div>
-          <div className="about-me__skills">
-            <h3 className="skills__title">MY TECH SKILLS</h3>
-            <div className="skills__content">
-              {ch04937.about.skills &&
-                ch04937.about.skills.map((item) => (
-                  <Skill key={shortid.generate()} skill={item} />
-                ))}
-            </div>
+        <img
+          src={profile.avatar_url}
+          alt="Carlos Hernandez"
+          className="profile__photo m-4"
+        />
+        <h3>Who am I?</h3>
+        <div className="text-left">
+          <p>{ch04937.about.header}</p>
+          <p>{ch04937.about.why}</p>
+          <p>{profile.bio}</p>
+          <Social />
+        </div>
+        <div className="about-me__skills">
+          <h3 className="skills__title">MY TECH SKILLS</h3>
+          <div className="skills__content">
+            {ch04937.about.skills &&
+              ch04937.about.skills.map((item) => (
+                <Skill key={shortid.generate()} skill={item} />
+              ))}
           </div>
         </div>
       </div>

@@ -5,7 +5,9 @@ import Social from "../components/Social";
 const Footer = () => (
   <footer className="footer">
     <div className="footer__copyright">
-      <Logo size="small" />
+      <div className="footer-logo">
+        <Logo />
+      </div>
       <p>Copyright © 2020</p>
     </div>
     <Social />

@@ -3,9 +3,7 @@
   max-width: 350px;
 }
 .about-me {
-  display: flex;
-  justify-content: space-around;
-  gap: 2rem;
+  min-height: 100vh;
 }
 .profile__photo {
   max-width: 350px;
