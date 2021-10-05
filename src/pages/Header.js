@@ -22,21 +22,21 @@ const Header = () => {
         <nav className="navbar-nav">
           <button className="nav-item" onClick={() => handleClick("projects")}>
             <a
-              className={active === "projects" ? `nav-link-active` : "nav-link"}
+              className={`nav-link ${active === "projects" && "highlight"}`}
               href="#projects">
               Projects
             </a>
           </button>
           <button className="nav-item" onClick={() => handleClick("about")}>
             <a
-              className={active === "about" ? `nav-link-active` : "nav-link"}
+              className={`nav-link ${active === "about" && "highlight"}`}
               href="#about">
               About
             </a>
           </button>
           <button className="nav-item" onClick={() => handleClick("contact")}>
             <a
-              className={active === "contact" ? `nav-link-active` : "nav-link"}
+              className={`nav-link ${active === "contact" && "highlight"}`}
               href="#contact-me">
               Contact Me
             </a>

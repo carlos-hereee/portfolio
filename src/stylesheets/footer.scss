@@ -37,14 +37,13 @@
 .nav-link {
   color: white;
   &:hover {
+    background-color: #f4d403;
     color: white;
   }
 }
-.nav-link-active {
-  color: #f4d403;
-  &:hover {
-    color: #f4d403;
-  }
+.highlight {
+  background-color: #f4d403;
+  color: black;
 }
 
 .header {

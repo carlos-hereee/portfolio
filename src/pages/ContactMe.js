@@ -75,7 +75,7 @@ const ContactMe = () => {
             </div>
           )}
           <div className="text-center p-2">
-            <button className="btn button-submit" type="submit">
+            <button className="btn button" type="submit">
               Submit
             </button>
           </div>
