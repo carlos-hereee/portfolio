@@ -29,7 +29,8 @@
   }
 }
 .nav-item {
-  margin: 1rem 0;
+  text-align: center;
+  padding: 1rem 0;
   background-color: #05131f;
   border: none;
 }
@@ -47,6 +48,7 @@
 }
 
 .header {
+  transition: transform 1s ease;
   background-color: #05131f;
   width: 300px;
   color: white;
@@ -55,8 +57,43 @@
   display: flex;
   justify-content: space-around;
 }
+.header-active {
+  transform: translateX(0);
+  transition: transform 1s ease;
+  background-color: #05131f;
+  width: 300px;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+  padding-top: 40%;
+  display: flex;
+  justify-content: space-around;
+}
 .header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header-logo-hamburger {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+@media #{$mobile} {
+  .header {
+    position: absolute;
+    transform: translateX(-100%);
+  }
+  .header-logo-hamburger {
+    border: none;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    left: 10px;
+    .logo {
+      width: 100px;
+    }
+  }
 }
