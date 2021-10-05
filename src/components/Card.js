@@ -8,7 +8,7 @@ const Card = ({ card }) => (
     <div className="d-flex flex-wrap justify-content-around">
       {card.buttons.map((item) => (
         <a href={item.link} className="m-1">
-          <button className="btn btn-secondary">{item.name}</button>
+          <button className="btn button">{item.name}</button>
         </a>
       ))}
     </div>
