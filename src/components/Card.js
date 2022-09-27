@@ -7,7 +7,7 @@ const Card = ({ card }) => (
     </div>
     <div className="d-flex flex-wrap justify-content-around">
       {card.buttons.map((item) => (
-        <a href={item.link} className="m-1">
+        <a href={item.link} className="m-1 link">
           <button className="btn button">{item.name}</button>
         </a>
       ))}

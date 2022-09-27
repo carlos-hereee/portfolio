@@ -28,16 +28,10 @@
 }
 .body {
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .logo {
   width: 80%;
-}
-.introduction {
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .projects {
   min-height: 100vh;
@@ -47,17 +41,20 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: #05131f;
 }
 .button {
   background-color: #f4d403;
   color: white;
   &:hover {
     background-color: white;
-    color: #f4d403;
+    color: black;
   }
   &:active {
     background-color: #f4d403;
     color: black;
   }
+}
+.nav-link {
+  border-radius: 4px;
 }

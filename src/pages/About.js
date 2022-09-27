@@ -8,7 +8,7 @@ const AboutMe = () => {
   const [profile, setProfile] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    fetch("https://api.github.com/users/ch04937")
+    fetch("https://api.github.com/users/carlos-hereee")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -30,7 +30,7 @@ const AboutMe = () => {
           alt="Carlos Hernandez"
           className="profile__photo m-4"
         />
-        <h3>Who am I?</h3>
+        <h3>WHO AM I?</h3>
         <div className="text-left">
           <p>{ch04937.about.header}</p>
           <p>{ch04937.about.why}</p>

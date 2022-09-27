@@ -10,13 +10,13 @@ const Social = () => (
     <a
       href="https://www.linkedin.com/in/ch04937-carlos-hernandez/"
       className="social-link">
-      <FontAwesomeIcon icon={faLinkedin} size="3x" />
+      <FontAwesomeIcon icon={faLinkedin} size="3x" color="gold" />
     </a>
     <a href="https://www.github.com/ch04937" className="social-link">
-      <FontAwesomeIcon icon={faGithub} size="3x" />
+      <FontAwesomeIcon icon={faGithub} size="3x" color="gold" />
     </a>
     <a href="https://twitter.com/ch04937" className="social-link">
-      <FontAwesomeIcon icon={faTwitter} size="3x" />
+      <FontAwesomeIcon icon={faTwitter} size="3x" color="gold" />
     </a>
   </div>
 );

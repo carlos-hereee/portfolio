@@ -20,18 +20,18 @@ const Header = () => {
           <Logo />
         </div>
         <nav className="navbar-nav">
-          <button className="nav-item" onClick={() => handleClick("projects")}>
-            <a
-              className={`nav-link ${active === "projects" && "highlight"}`}
-              href="#projects">
-              Projects
-            </a>
-          </button>
           <button className="nav-item" onClick={() => handleClick("about")}>
             <a
               className={`nav-link ${active === "about" && "highlight"}`}
               href="#about">
               About
+            </a>
+          </button>
+          <button className="nav-item" onClick={() => handleClick("projects")}>
+            <a
+              className={`nav-link ${active === "projects" && "highlight"}`}
+              href="#projects">
+              Projects
             </a>
           </button>
           <button className="nav-item" onClick={() => handleClick("contact")}>

@@ -35,8 +35,8 @@
   },
   "projects": [
     {
-      "name": "Take Five",
-      "tech_stack": "Front End - React.js, Bootstrap, Scss",
+      "name": "TF Games",
+      "tech_stack": "Front End - React.js, Bootstrap, Scss, Socket.io",
       "description": "An arcade of games where the user share their status and can play minigames with friends",
       "buttons": [
         {
@@ -45,11 +45,11 @@
         },
         {
           "name": "Github",
-          "link": "https://github.com/ch04937/take-five"
+          "link": "https://github.com/carlos-hereee/tf-games"
         },
         {
           "name": "Documentation",
-          "link": "https://utopian-bit-fdc.notion.site/Take-Five-717cf4058b2146b7a85d807b08c2b2e6"
+          "link": "https://utopian-bit-fdc.notion.site/TF-games-717cf4058b2146b7a85d807b08c2b2e6"
         }
       ]
     },
@@ -64,22 +64,7 @@
         },
         {
           "name": "Github",
-          "link": "https://github.com/ch04937/show-finder"
-        }
-      ]
-    },
-    {
-      "name": "School Calendar",
-      "tech_stack": "Full Stack - React in the front end, Node.js (MySql3) in the backend",
-      "description": "School teacher and coaches can schedule real world events to school events so that everyone is always updated when changes occur.",
-      "buttons": [
-        {
-          "name": "View Project",
-          "link": "https://deploy-preview-127--labs17-school-calendar.netlify.app/"
-        },
-        {
-          "name": "Github",
-          "link": "https://github.com/Lambda-School-Labs/school-calendar-fe"
+          "link": "https://github.com/carlos-hereee/show-finder"
         }
       ]
     }

@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="footer-logo">
         <Logo />
       </div>
-      <p>Copyright © 2020</p>
+      <p>Copyright © {new Date().getFullYear}</p>
     </div>
     <Social />
   </footer>
