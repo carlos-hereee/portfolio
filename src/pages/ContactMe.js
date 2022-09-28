@@ -4,6 +4,7 @@ import { client } from "../utils/axios";
 import * as yup from "yup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const schema = yup.object({
   name: yup.string().required("*This field is required"),
@@ -16,12 +17,14 @@ const schema = yup.object({
 
 const ContactMe = () => {
   const [status, setStatus] = useState(false);
+  const [robot, setRobot] = useState();
   const contactMe = (msg) => {
     client()
       .post("/api/email", msg)
       .then((res) => setStatus(res.data.status))
       .catch(() => setStatus(false));
   };
+  const onChange = (e) => setRobot(e);
   return (
     <section className="container contact-me mb-4" id="contact-me">
       <div>
@@ -35,15 +38,8 @@ const ContactMe = () => {
         </p>
       </div>
       <Formik
-        initialValues={{
-          name: "",
-          email: "",
-          message: "",
-        }}
-        onSubmit={(values, actions) => {
-          contactMe(values);
-          actions.resetForm();
-        }}
+        initialValues={{ name: "", email: "", message: "" }}
+        onSubmit={(values) => robot && contactMe(values)}
         validationSchema={schema}>
         <Form className="contact-me__form">
           <div className="contact-me__label">
@@ -74,7 +70,11 @@ const ContactMe = () => {
               </p>
             </div>
           )}
-          <div className="text-center p-2">
+          <div className="d-flex flex-column align-items-center m-1">
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_SITE_KEY}
+              onChange={onChange}
+            />
             <button className="btn button" type="submit">
               Submit
             </button>
