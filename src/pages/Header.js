@@ -11,10 +11,12 @@ const Header = () => {
     setBurger(false);
   };
   return (
-    <>
-      <div className="header-logo-hamburger" onClick={() => setBurger(!burger)}>
+    <header>
+      <button
+        className="header-logo-hamburger"
+        onClick={() => setBurger(!burger)}>
         <Logo />
-      </div>
+      </button>
       <div className={burger ? `header-active` : "header"}>
         <div className="header-logo">
           <Logo />
@@ -51,7 +53,7 @@ const Header = () => {
           </li>
         </nav>
       </div>
-    </>
+    </header>
   );
 };
 export default Header;
